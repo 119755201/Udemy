@@ -29,6 +29,9 @@
 
     Private Sub btnMultiply_Click(sender As Object, e As EventArgs) Handles btnMultiply.Click
 
+        ' If the first & second textboxes contain data, that data will be converted to a double integer '
+
+
         If txtFirstNumber.Text <> "" And txtSecondNumber.Text <> "" Then
             firstNumber = CDbl(txtFirstNumber.Text)
             secondNumber = CDbl(txtSecondNumber.Text)
