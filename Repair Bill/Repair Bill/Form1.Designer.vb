@@ -37,6 +37,7 @@ Partial Class frmRepairBill
         Me.txtSubTotal = New System.Windows.Forms.TextBox()
         Me.txtSalesTax = New System.Windows.Forms.TextBox()
         Me.btnCalculate = New System.Windows.Forms.Button()
+        Me.lstDisplayOutput = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
         '
         'txtCustomerName
@@ -163,11 +164,21 @@ Partial Class frmRepairBill
         Me.btnCalculate.Text = "Calculate"
         Me.btnCalculate.UseVisualStyleBackColor = True
         '
+        'lstDisplayOutput
+        '
+        Me.lstDisplayOutput.FormattingEnabled = True
+        Me.lstDisplayOutput.ItemHeight = 20
+        Me.lstDisplayOutput.Location = New System.Drawing.Point(492, 128)
+        Me.lstDisplayOutput.Name = "lstDisplayOutput"
+        Me.lstDisplayOutput.Size = New System.Drawing.Size(212, 204)
+        Me.lstDisplayOutput.TabIndex = 16
+        '
         'frmRepairBill
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lstDisplayOutput)
         Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.txtTotalCost)
         Me.Controls.Add(Me.txtSubTotal)
@@ -205,4 +216,5 @@ Partial Class frmRepairBill
     Friend WithEvents txtSubTotal As TextBox
     Friend WithEvents txtSalesTax As TextBox
     Friend WithEvents btnCalculate As Button
+    Friend WithEvents lstDisplayOutput As ListBox
 End Class

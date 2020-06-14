@@ -13,10 +13,10 @@
 
     Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
 
-        If txtCustomerName.Text <> "" And txtHoursWorked.Text <> "" And txtPartsCost.Text <> "" And txtSuppliesCost.Text <> "" Then
+        If txtCustomerName.Text <> "" And IsNumeric(txtHoursWorked.Text) And IsNumeric(txtPartsCost.Text) And IsNumeric(txtSuppliesCost.Text) Then
 
-            customerName = CStr(txtCustomerName.Text)
-            hoursWorked = CDbl(txtHoursWorked.Text) * 35
+            customerName = txtCustomerName.Text
+            hoursWorked = txtHoursWorked.Text * 35
             partsCost = CDbl(txtPartsCost.Text)
             suppliesCost = CDbl(txtSuppliesCost.Text)
 
@@ -29,6 +29,11 @@
             txtSubTotal.Text = subTotal
             txtSalesTax.Text = salesTax
             txtTotalCost.Text = totalCost
+
+            lstDisplayOutput.Items.Add("Customer: " & customerName)
+            lstDisplayOutput.Items.Add("Total Labor Cost: " & FormatCurrency(hoursWorked))
+            lstDisplayOutput.Items.Add("Total Parts Cost: " & FormatCurrency(partsCost + suppliesCost))
+            lstDisplayOutput.Items.Add("Total Sales Tax (5%): " & FormatCurrency(salesTax))
 
         Else
             MessageBox.Show("Please enter all the required information")
