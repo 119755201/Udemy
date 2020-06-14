@@ -1,5 +1,7 @@
 ﻿Public Class frmCalculator
 
+    ' Removed second form '
+
     ' Declare variables for later use '
 
 
