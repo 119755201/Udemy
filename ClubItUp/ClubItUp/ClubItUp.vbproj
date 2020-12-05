@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomerInformation.Designer.vb">
+      <DependentUpon>CustomerInformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerInformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -95,8 +101,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="SigningUp.Designer.vb">
+      <DependentUpon>SigningUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SigningUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CustomerInformation.resx">
+      <DependentUpon>CustomerInformation.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -105,6 +120,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SigningUp.resx">
+      <DependentUpon>SigningUp.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
