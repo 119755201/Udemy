@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmCustomerDetails2
+Partial Class frmClothingOptions
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,6 +23,8 @@ Partial Class frmCustomerDetails2
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.gbxCustomerInformation = New System.Windows.Forms.GroupBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.lblEirCode = New System.Windows.Forms.Label()
         Me.txtTownCity = New System.Windows.Forms.TextBox()
         Me.lblAddressInformation = New System.Windows.Forms.Label()
         Me.txtStreetAddress = New System.Windows.Forms.TextBox()
@@ -32,9 +34,6 @@ Partial Class frmCustomerDetails2
         Me.lblStreetAddress = New System.Windows.Forms.Label()
         Me.btnNext = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
-        Me.btnExit = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.lblEirCode = New System.Windows.Forms.Label()
         Me.gbxCustomerInformation.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -57,8 +56,28 @@ Partial Class frmCustomerDetails2
         Me.gbxCustomerInformation.Location = New System.Drawing.Point(54, 32)
         Me.gbxCustomerInformation.Name = "gbxCustomerInformation"
         Me.gbxCustomerInformation.Size = New System.Drawing.Size(626, 310)
-        Me.gbxCustomerInformation.TabIndex = 11
+        Me.gbxCustomerInformation.TabIndex = 12
         Me.gbxCustomerInformation.TabStop = False
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(283, 210)
+        Me.TextBox1.MaxLength = 7
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(197, 20)
+        Me.TextBox1.TabIndex = 23
+        '
+        'lblEirCode
+        '
+        Me.lblEirCode.AutoSize = True
+        Me.lblEirCode.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEirCode.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.lblEirCode.Location = New System.Drawing.Point(142, 209)
+        Me.lblEirCode.Name = "lblEirCode"
+        Me.lblEirCode.Size = New System.Drawing.Size(74, 21)
+        Me.lblEirCode.TabIndex = 22
+        Me.lblEirCode.Text = "Eir Code"
         '
         'txtTownCity
         '
@@ -156,49 +175,15 @@ Partial Class frmCustomerDetails2
         Me.btnBack.Text = "Back"
         Me.btnBack.UseVisualStyleBackColor = False
         '
-        'btnExit
-        '
-        Me.btnExit.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.btnExit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnExit.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnExit.ForeColor = System.Drawing.Color.White
-        Me.btnExit.Location = New System.Drawing.Point(318, 366)
-        Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(93, 37)
-        Me.btnExit.TabIndex = 12
-        Me.btnExit.Text = "Exit"
-        Me.btnExit.UseVisualStyleBackColor = False
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(283, 210)
-        Me.TextBox1.MaxLength = 7
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(197, 20)
-        Me.TextBox1.TabIndex = 23
-        '
-        'lblEirCode
-        '
-        Me.lblEirCode.AutoSize = True
-        Me.lblEirCode.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblEirCode.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.lblEirCode.Location = New System.Drawing.Point(142, 209)
-        Me.lblEirCode.Name = "lblEirCode"
-        Me.lblEirCode.Size = New System.Drawing.Size(74, 21)
-        Me.lblEirCode.TabIndex = 22
-        Me.lblEirCode.Text = "Eir Code"
-        '
-        'frmCustomerDetails2
+        'frmClothingOptions
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(216, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(729, 428)
-        Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.gbxCustomerInformation)
-        Me.Name = "frmCustomerDetails2"
-        Me.Text = "Customer Details (2/3)"
+        Me.Name = "frmClothingOptions"
+        Me.Text = "Clothing Options"
         Me.gbxCustomerInformation.ResumeLayout(False)
         Me.gbxCustomerInformation.PerformLayout()
         Me.ResumeLayout(False)
@@ -206,6 +191,9 @@ Partial Class frmCustomerDetails2
     End Sub
 
     Friend WithEvents gbxCustomerInformation As GroupBox
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents lblEirCode As Label
+    Friend WithEvents txtTownCity As TextBox
     Friend WithEvents lblAddressInformation As Label
     Friend WithEvents txtStreetAddress As TextBox
     Friend WithEvents txtCounty As TextBox
@@ -214,8 +202,4 @@ Partial Class frmCustomerDetails2
     Friend WithEvents lblStreetAddress As Label
     Friend WithEvents btnNext As Button
     Friend WithEvents btnBack As Button
-    Friend WithEvents btnExit As Button
-    Friend WithEvents txtTownCity As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents lblEirCode As Label
 End Class

@@ -79,6 +79,12 @@
     <Compile Include="AdditionalInformation.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ClothingOptions.Designer.vb">
+      <DependentUpon>ClothingOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClothingOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CustomerDetails.Designer.vb">
       <DependentUpon>CustomerDetails.vb</DependentUpon>
     </Compile>
@@ -89,6 +95,12 @@
       <DependentUpon>CustomerDetails2.vb</DependentUpon>
     </Compile>
     <Compile Include="CustomerDetails2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerDetails3.Designer.vb">
+      <DependentUpon>CustomerDetails3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDetails3.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EmployeeInformation.Designer.vb">
@@ -130,11 +142,17 @@
     <EmbeddedResource Include="AdditionalInformation.resx">
       <DependentUpon>AdditionalInformation.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ClothingOptions.resx">
+      <DependentUpon>ClothingOptions.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomerDetails.resx">
       <DependentUpon>CustomerDetails.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomerDetails2.resx">
       <DependentUpon>CustomerDetails2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerDetails3.resx">
+      <DependentUpon>CustomerDetails3.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EmployeeInformation.resx">
       <DependentUpon>EmployeeInformation.vb</DependentUpon>

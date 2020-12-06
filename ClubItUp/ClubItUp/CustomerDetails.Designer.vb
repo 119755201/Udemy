@@ -23,17 +23,17 @@ Partial Class frmCustomerDetails
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.gbxCustomerInformation = New System.Windows.Forms.GroupBox()
-        Me.btnExit = New System.Windows.Forms.Button()
+        Me.lblPersonalInformation = New System.Windows.Forms.Label()
+        Me.txtContactNumPrefix = New System.Windows.Forms.TextBox()
+        Me.txtCustomerName = New System.Windows.Forms.TextBox()
+        Me.txtContactNumber = New System.Windows.Forms.TextBox()
+        Me.dtbDateTimePicker = New System.Windows.Forms.DateTimePicker()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblCustomerName = New System.Windows.Forms.Label()
         Me.btnNext = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
-        Me.lblCustomerName = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.dtbDateTimePicker = New System.Windows.Forms.DateTimePicker()
-        Me.txtContactNumber = New System.Windows.Forms.TextBox()
-        Me.txtCustomerName = New System.Windows.Forms.TextBox()
-        Me.txtContactNumPrefix = New System.Windows.Forms.TextBox()
-        Me.lblPersonalInformation = New System.Windows.Forms.Label()
+        Me.btnExit = New System.Windows.Forms.Button()
         Me.gbxCustomerInformation.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -57,18 +57,82 @@ Partial Class frmCustomerDetails
         Me.gbxCustomerInformation.TabIndex = 10
         Me.gbxCustomerInformation.TabStop = False
         '
-        'btnExit
+        'lblPersonalInformation
         '
-        Me.btnExit.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.btnExit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnExit.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnExit.ForeColor = System.Drawing.Color.White
-        Me.btnExit.Location = New System.Drawing.Point(318, 366)
-        Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(93, 37)
-        Me.btnExit.TabIndex = 11
-        Me.btnExit.Text = "Exit"
-        Me.btnExit.UseVisualStyleBackColor = False
+        Me.lblPersonalInformation.AutoSize = True
+        Me.lblPersonalInformation.Font = New System.Drawing.Font("Nirmala UI", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPersonalInformation.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.lblPersonalInformation.Location = New System.Drawing.Point(180, 30)
+        Me.lblPersonalInformation.Name = "lblPersonalInformation"
+        Me.lblPersonalInformation.Size = New System.Drawing.Size(263, 37)
+        Me.lblPersonalInformation.TabIndex = 20
+        Me.lblPersonalInformation.Text = "Personal Information"
+        '
+        'txtContactNumPrefix
+        '
+        Me.txtContactNumPrefix.Location = New System.Drawing.Point(283, 170)
+        Me.txtContactNumPrefix.MaxLength = 4
+        Me.txtContactNumPrefix.Multiline = True
+        Me.txtContactNumPrefix.Name = "txtContactNumPrefix"
+        Me.txtContactNumPrefix.Size = New System.Drawing.Size(46, 20)
+        Me.txtContactNumPrefix.TabIndex = 19
+        '
+        'txtCustomerName
+        '
+        Me.txtCustomerName.Location = New System.Drawing.Point(283, 91)
+        Me.txtCustomerName.MaxLength = 20
+        Me.txtCustomerName.Name = "txtCustomerName"
+        Me.txtCustomerName.Size = New System.Drawing.Size(200, 24)
+        Me.txtCustomerName.TabIndex = 18
+        '
+        'txtContactNumber
+        '
+        Me.txtContactNumber.Location = New System.Drawing.Point(335, 170)
+        Me.txtContactNumber.MaxLength = 10
+        Me.txtContactNumber.Multiline = True
+        Me.txtContactNumber.Name = "txtContactNumber"
+        Me.txtContactNumber.Size = New System.Drawing.Size(148, 20)
+        Me.txtContactNumber.TabIndex = 17
+        '
+        'dtbDateTimePicker
+        '
+        Me.dtbDateTimePicker.Location = New System.Drawing.Point(283, 126)
+        Me.dtbDateTimePicker.Name = "dtbDateTimePicker"
+        Me.dtbDateTimePicker.Size = New System.Drawing.Size(200, 24)
+        Me.dtbDateTimePicker.TabIndex = 16
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(142, 169)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(138, 21)
+        Me.Label2.TabIndex = 14
+        Me.Label2.Text = "Contact Number"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(142, 128)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(108, 21)
+        Me.Label1.TabIndex = 13
+        Me.Label1.Text = "Date of Birth"
+        '
+        'lblCustomerName
+        '
+        Me.lblCustomerName.AutoSize = True
+        Me.lblCustomerName.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCustomerName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.lblCustomerName.Location = New System.Drawing.Point(142, 91)
+        Me.lblCustomerName.Name = "lblCustomerName"
+        Me.lblCustomerName.Size = New System.Drawing.Size(135, 21)
+        Me.lblCustomerName.TabIndex = 12
+        Me.lblCustomerName.Text = "Customer Name"
         '
         'btnNext
         '
@@ -97,82 +161,18 @@ Partial Class frmCustomerDetails
         Me.btnBack.Text = "Back"
         Me.btnBack.UseVisualStyleBackColor = False
         '
-        'lblCustomerName
+        'btnExit
         '
-        Me.lblCustomerName.AutoSize = True
-        Me.lblCustomerName.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCustomerName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.lblCustomerName.Location = New System.Drawing.Point(142, 91)
-        Me.lblCustomerName.Name = "lblCustomerName"
-        Me.lblCustomerName.Size = New System.Drawing.Size(135, 21)
-        Me.lblCustomerName.TabIndex = 12
-        Me.lblCustomerName.Text = "Customer Name"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(142, 128)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(108, 21)
-        Me.Label1.TabIndex = 13
-        Me.Label1.Text = "Date of Birth"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(142, 169)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(138, 21)
-        Me.Label2.TabIndex = 14
-        Me.Label2.Text = "Contact Number"
-        '
-        'dtbDateTimePicker
-        '
-        Me.dtbDateTimePicker.Location = New System.Drawing.Point(283, 126)
-        Me.dtbDateTimePicker.Name = "dtbDateTimePicker"
-        Me.dtbDateTimePicker.Size = New System.Drawing.Size(200, 24)
-        Me.dtbDateTimePicker.TabIndex = 16
-        '
-        'txtContactNumber
-        '
-        Me.txtContactNumber.Location = New System.Drawing.Point(335, 170)
-        Me.txtContactNumber.MaxLength = 10
-        Me.txtContactNumber.Multiline = True
-        Me.txtContactNumber.Name = "txtContactNumber"
-        Me.txtContactNumber.Size = New System.Drawing.Size(148, 20)
-        Me.txtContactNumber.TabIndex = 17
-        '
-        'txtCustomerName
-        '
-        Me.txtCustomerName.Location = New System.Drawing.Point(283, 91)
-        Me.txtCustomerName.MaxLength = 20
-        Me.txtCustomerName.Name = "txtCustomerName"
-        Me.txtCustomerName.Size = New System.Drawing.Size(200, 24)
-        Me.txtCustomerName.TabIndex = 18
-        '
-        'txtContactNumPrefix
-        '
-        Me.txtContactNumPrefix.Location = New System.Drawing.Point(283, 170)
-        Me.txtContactNumPrefix.MaxLength = 4
-        Me.txtContactNumPrefix.Multiline = True
-        Me.txtContactNumPrefix.Name = "txtContactNumPrefix"
-        Me.txtContactNumPrefix.Size = New System.Drawing.Size(46, 20)
-        Me.txtContactNumPrefix.TabIndex = 19
-        '
-        'lblPersonalInformation
-        '
-        Me.lblPersonalInformation.AutoSize = True
-        Me.lblPersonalInformation.Font = New System.Drawing.Font("Nirmala UI", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPersonalInformation.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.lblPersonalInformation.Location = New System.Drawing.Point(180, 30)
-        Me.lblPersonalInformation.Name = "lblPersonalInformation"
-        Me.lblPersonalInformation.Size = New System.Drawing.Size(263, 37)
-        Me.lblPersonalInformation.TabIndex = 20
-        Me.lblPersonalInformation.Text = "Personal Information"
+        Me.btnExit.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.btnExit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnExit.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnExit.ForeColor = System.Drawing.Color.White
+        Me.btnExit.Location = New System.Drawing.Point(318, 366)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(93, 37)
+        Me.btnExit.TabIndex = 11
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = False
         '
         'frmCustomerDetails
         '
@@ -183,7 +183,7 @@ Partial Class frmCustomerDetails
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.gbxCustomerInformation)
         Me.Name = "frmCustomerDetails"
-        Me.Text = "Customer Details (1/3)"
+        Me.Text = "Customer Details"
         Me.gbxCustomerInformation.ResumeLayout(False)
         Me.gbxCustomerInformation.PerformLayout()
         Me.ResumeLayout(False)

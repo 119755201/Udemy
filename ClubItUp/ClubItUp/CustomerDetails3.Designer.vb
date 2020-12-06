@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmCustomerDetails2
+Partial Class CustomerDetails3
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -25,31 +25,23 @@ Partial Class frmCustomerDetails2
         Me.gbxCustomerInformation = New System.Windows.Forms.GroupBox()
         Me.txtTownCity = New System.Windows.Forms.TextBox()
         Me.lblAddressInformation = New System.Windows.Forms.Label()
-        Me.txtStreetAddress = New System.Windows.Forms.TextBox()
-        Me.txtCounty = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.lblTownCity = New System.Windows.Forms.Label()
-        Me.lblStreetAddress = New System.Windows.Forms.Label()
+        Me.lblCardNumber = New System.Windows.Forms.Label()
+        Me.lblPaymentType = New System.Windows.Forms.Label()
         Me.btnNext = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.lblEirCode = New System.Windows.Forms.Label()
+        Me.lbx = New System.Windows.Forms.ListBox()
         Me.gbxCustomerInformation.SuspendLayout()
         Me.SuspendLayout()
         '
         'gbxCustomerInformation
         '
         Me.gbxCustomerInformation.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.gbxCustomerInformation.Controls.Add(Me.TextBox1)
-        Me.gbxCustomerInformation.Controls.Add(Me.lblEirCode)
+        Me.gbxCustomerInformation.Controls.Add(Me.lbx)
         Me.gbxCustomerInformation.Controls.Add(Me.txtTownCity)
         Me.gbxCustomerInformation.Controls.Add(Me.lblAddressInformation)
-        Me.gbxCustomerInformation.Controls.Add(Me.txtStreetAddress)
-        Me.gbxCustomerInformation.Controls.Add(Me.txtCounty)
-        Me.gbxCustomerInformation.Controls.Add(Me.Label2)
-        Me.gbxCustomerInformation.Controls.Add(Me.lblTownCity)
-        Me.gbxCustomerInformation.Controls.Add(Me.lblStreetAddress)
+        Me.gbxCustomerInformation.Controls.Add(Me.lblCardNumber)
+        Me.gbxCustomerInformation.Controls.Add(Me.lblPaymentType)
         Me.gbxCustomerInformation.Controls.Add(Me.btnNext)
         Me.gbxCustomerInformation.Controls.Add(Me.btnBack)
         Me.gbxCustomerInformation.FlatStyle = System.Windows.Forms.FlatStyle.Popup
@@ -57,12 +49,12 @@ Partial Class frmCustomerDetails2
         Me.gbxCustomerInformation.Location = New System.Drawing.Point(54, 32)
         Me.gbxCustomerInformation.Name = "gbxCustomerInformation"
         Me.gbxCustomerInformation.Size = New System.Drawing.Size(626, 310)
-        Me.gbxCustomerInformation.TabIndex = 11
+        Me.gbxCustomerInformation.TabIndex = 12
         Me.gbxCustomerInformation.TabStop = False
         '
         'txtTownCity
         '
-        Me.txtTownCity.Location = New System.Drawing.Point(283, 128)
+        Me.txtTownCity.Location = New System.Drawing.Point(285, 156)
         Me.txtTownCity.MaxLength = 20
         Me.txtTownCity.Name = "txtTownCity"
         Me.txtTownCity.Size = New System.Drawing.Size(200, 24)
@@ -75,59 +67,31 @@ Partial Class frmCustomerDetails2
         Me.lblAddressInformation.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
         Me.lblAddressInformation.Location = New System.Drawing.Point(180, 30)
         Me.lblAddressInformation.Name = "lblAddressInformation"
-        Me.lblAddressInformation.Size = New System.Drawing.Size(257, 37)
+        Me.lblAddressInformation.Size = New System.Drawing.Size(265, 37)
         Me.lblAddressInformation.TabIndex = 20
-        Me.lblAddressInformation.Text = "Address Information"
+        Me.lblAddressInformation.Text = "Payment Information"
         '
-        'txtStreetAddress
+        'lblCardNumber
         '
-        Me.txtStreetAddress.Location = New System.Drawing.Point(283, 91)
-        Me.txtStreetAddress.MaxLength = 20
-        Me.txtStreetAddress.Name = "txtStreetAddress"
-        Me.txtStreetAddress.Size = New System.Drawing.Size(200, 24)
-        Me.txtStreetAddress.TabIndex = 18
+        Me.lblCardNumber.AutoSize = True
+        Me.lblCardNumber.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCardNumber.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.lblCardNumber.Location = New System.Drawing.Point(144, 156)
+        Me.lblCardNumber.Name = "lblCardNumber"
+        Me.lblCardNumber.Size = New System.Drawing.Size(114, 21)
+        Me.lblCardNumber.TabIndex = 13
+        Me.lblCardNumber.Text = "Card Number"
         '
-        'txtCounty
+        'lblPaymentType
         '
-        Me.txtCounty.Location = New System.Drawing.Point(283, 170)
-        Me.txtCounty.MaxLength = 10
-        Me.txtCounty.Multiline = True
-        Me.txtCounty.Name = "txtCounty"
-        Me.txtCounty.Size = New System.Drawing.Size(197, 20)
-        Me.txtCounty.TabIndex = 17
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(142, 169)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(65, 21)
-        Me.Label2.TabIndex = 14
-        Me.Label2.Text = "County"
-        '
-        'lblTownCity
-        '
-        Me.lblTownCity.AutoSize = True
-        Me.lblTownCity.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTownCity.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.lblTownCity.Location = New System.Drawing.Point(142, 128)
-        Me.lblTownCity.Name = "lblTownCity"
-        Me.lblTownCity.Size = New System.Drawing.Size(88, 21)
-        Me.lblTownCity.TabIndex = 13
-        Me.lblTownCity.Text = "Town/City"
-        '
-        'lblStreetAddress
-        '
-        Me.lblStreetAddress.AutoSize = True
-        Me.lblStreetAddress.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblStreetAddress.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.lblStreetAddress.Location = New System.Drawing.Point(142, 91)
-        Me.lblStreetAddress.Name = "lblStreetAddress"
-        Me.lblStreetAddress.Size = New System.Drawing.Size(120, 21)
-        Me.lblStreetAddress.TabIndex = 12
-        Me.lblStreetAddress.Text = "Street Address"
+        Me.lblPaymentType.AutoSize = True
+        Me.lblPaymentType.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPaymentType.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.lblPaymentType.Location = New System.Drawing.Point(144, 119)
+        Me.lblPaymentType.Name = "lblPaymentType"
+        Me.lblPaymentType.Size = New System.Drawing.Size(118, 21)
+        Me.lblPaymentType.TabIndex = 12
+        Me.lblPaymentType.Text = "Payment Type"
         '
         'btnNext
         '
@@ -165,31 +129,21 @@ Partial Class frmCustomerDetails2
         Me.btnExit.Location = New System.Drawing.Point(318, 366)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(93, 37)
-        Me.btnExit.TabIndex = 12
+        Me.btnExit.TabIndex = 13
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = False
         '
-        'TextBox1
+        'lbx
         '
-        Me.TextBox1.Location = New System.Drawing.Point(283, 210)
-        Me.TextBox1.MaxLength = 7
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(197, 20)
-        Me.TextBox1.TabIndex = 23
+        Me.lbx.FormattingEnabled = True
+        Me.lbx.ItemHeight = 19
+        Me.lbx.Items.AddRange(New Object() {"Visa", "Mastercard", "Laser", "AmEx"})
+        Me.lbx.Location = New System.Drawing.Point(285, 119)
+        Me.lbx.Name = "lbx"
+        Me.lbx.Size = New System.Drawing.Size(197, 23)
+        Me.lbx.TabIndex = 22
         '
-        'lblEirCode
-        '
-        Me.lblEirCode.AutoSize = True
-        Me.lblEirCode.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblEirCode.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.lblEirCode.Location = New System.Drawing.Point(142, 209)
-        Me.lblEirCode.Name = "lblEirCode"
-        Me.lblEirCode.Size = New System.Drawing.Size(74, 21)
-        Me.lblEirCode.TabIndex = 22
-        Me.lblEirCode.Text = "Eir Code"
-        '
-        'frmCustomerDetails2
+        'CustomerDetails3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -197,8 +151,8 @@ Partial Class frmCustomerDetails2
         Me.ClientSize = New System.Drawing.Size(729, 428)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.gbxCustomerInformation)
-        Me.Name = "frmCustomerDetails2"
-        Me.Text = "Customer Details (2/3)"
+        Me.Name = "CustomerDetails3"
+        Me.Text = "Customer Details (3/3)"
         Me.gbxCustomerInformation.ResumeLayout(False)
         Me.gbxCustomerInformation.PerformLayout()
         Me.ResumeLayout(False)
@@ -206,16 +160,12 @@ Partial Class frmCustomerDetails2
     End Sub
 
     Friend WithEvents gbxCustomerInformation As GroupBox
+    Friend WithEvents txtTownCity As TextBox
     Friend WithEvents lblAddressInformation As Label
-    Friend WithEvents txtStreetAddress As TextBox
-    Friend WithEvents txtCounty As TextBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents lblTownCity As Label
-    Friend WithEvents lblStreetAddress As Label
+    Friend WithEvents lblCardNumber As Label
+    Friend WithEvents lblPaymentType As Label
     Friend WithEvents btnNext As Button
     Friend WithEvents btnBack As Button
     Friend WithEvents btnExit As Button
-    Friend WithEvents txtTownCity As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents lblEirCode As Label
+    Friend WithEvents lbx As ListBox
 End Class
