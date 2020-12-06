@@ -73,17 +73,35 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomerInformation.Designer.vb">
-      <DependentUpon>CustomerInformation.vb</DependentUpon>
+    <Compile Include="AdditionalInformation.Designer.vb">
+      <DependentUpon>AdditionalInformation.vb</DependentUpon>
     </Compile>
-    <Compile Include="CustomerInformation.vb">
+    <Compile Include="AdditionalInformation.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="CustomerDetails.Designer.vb">
+      <DependentUpon>CustomerDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDetails.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="CustomerDetails2.Designer.vb">
+      <DependentUpon>CustomerDetails2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDetails2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeInformation.Designer.vb">
+      <DependentUpon>EmployeeInformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeInformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.vb">
+      <DependentUpon>SignUp.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -109,11 +127,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CustomerInformation.resx">
-      <DependentUpon>CustomerInformation.vb</DependentUpon>
+    <EmbeddedResource Include="AdditionalInformation.resx">
+      <DependentUpon>AdditionalInformation.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="CustomerDetails.resx">
+      <DependentUpon>CustomerDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerDetails2.resx">
+      <DependentUpon>CustomerDetails2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeInformation.resx">
+      <DependentUpon>EmployeeInformation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

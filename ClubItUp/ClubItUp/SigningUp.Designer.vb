@@ -56,7 +56,7 @@ Partial Class frmRegisterDetails
         Me.lblYourDetails.AutoSize = True
         Me.lblYourDetails.Font = New System.Drawing.Font("Nirmala UI", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblYourDetails.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.lblYourDetails.Location = New System.Drawing.Point(26, 30)
+        Me.lblYourDetails.Location = New System.Drawing.Point(242, 30)
         Me.lblYourDetails.Name = "lblYourDetails"
         Me.lblYourDetails.Size = New System.Drawing.Size(158, 37)
         Me.lblYourDetails.TabIndex = 0
@@ -183,7 +183,7 @@ Partial Class frmRegisterDetails
         Me.btnExit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnExit.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnExit.ForeColor = System.Drawing.Color.White
-        Me.btnExit.Location = New System.Drawing.Point(321, 379)
+        Me.btnExit.Location = New System.Drawing.Point(318, 366)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(93, 37)
         Me.btnExit.TabIndex = 7
