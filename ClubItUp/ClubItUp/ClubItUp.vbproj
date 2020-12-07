@@ -115,10 +115,22 @@
     <Compile Include="CustomisationOptions2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="DeliveryInformation.Designer.vb">
+      <DependentUpon>DeliveryInformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryInformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="EmployeeInformation.Designer.vb">
       <DependentUpon>EmployeeInformation.vb</DependentUpon>
     </Compile>
     <Compile Include="EmployeeInformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderProcessing.Designer.vb">
+      <DependentUpon>OrderProcessing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OrderProcessing.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SignUp.vb">
@@ -172,8 +184,14 @@
     <EmbeddedResource Include="CustomisationOptions2.resx">
       <DependentUpon>CustomisationOptions2.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DeliveryInformation.resx">
+      <DependentUpon>DeliveryInformation.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EmployeeInformation.resx">
       <DependentUpon>EmployeeInformation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderProcessing.resx">
+      <DependentUpon>OrderProcessing.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.vb</DependentUpon>

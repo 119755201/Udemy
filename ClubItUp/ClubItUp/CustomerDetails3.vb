@@ -1,3 +1,3 @@
-﻿Public Class CustomerDetails3
+﻿Public Class frmCustomerDetails3
 
 End Class

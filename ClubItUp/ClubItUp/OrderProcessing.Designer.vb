@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmEmployeeConfirmation
+Partial Class frmOrderProcessing
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,6 @@ Partial Class frmEmployeeConfirmation
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.btnExit = New System.Windows.Forms.Button()
         Me.gbxEmployeeInformation = New System.Windows.Forms.GroupBox()
         Me.btnUpdateDetails = New System.Windows.Forms.Button()
         Me.lblUpdateDetails = New System.Windows.Forms.Label()
@@ -34,21 +33,9 @@ Partial Class frmEmployeeConfirmation
         Me.gbxDetailsConfirmation = New System.Windows.Forms.GroupBox()
         Me.btnNext = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
         Me.gbxEmployeeInformation.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'btnExit
-        '
-        Me.btnExit.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.btnExit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnExit.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnExit.ForeColor = System.Drawing.Color.White
-        Me.btnExit.Location = New System.Drawing.Point(318, 366)
-        Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(93, 37)
-        Me.btnExit.TabIndex = 8
-        Me.btnExit.Text = "Exit"
-        Me.btnExit.UseVisualStyleBackColor = False
         '
         'gbxEmployeeInformation
         '
@@ -65,10 +52,10 @@ Partial Class frmEmployeeConfirmation
         Me.gbxEmployeeInformation.Controls.Add(Me.btnBack)
         Me.gbxEmployeeInformation.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.gbxEmployeeInformation.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.gbxEmployeeInformation.Location = New System.Drawing.Point(54, 32)
+        Me.gbxEmployeeInformation.Location = New System.Drawing.Point(41, 44)
         Me.gbxEmployeeInformation.Name = "gbxEmployeeInformation"
         Me.gbxEmployeeInformation.Size = New System.Drawing.Size(626, 310)
-        Me.gbxEmployeeInformation.TabIndex = 9
+        Me.gbxEmployeeInformation.TabIndex = 10
         Me.gbxEmployeeInformation.TabStop = False
         '
         'btnUpdateDetails
@@ -140,20 +127,20 @@ Partial Class frmEmployeeConfirmation
         Me.lblDetailsCorrect.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
         Me.lblDetailsCorrect.Location = New System.Drawing.Point(374, 85)
         Me.lblDetailsCorrect.Name = "lblDetailsCorrect"
-        Me.lblDetailsCorrect.Size = New System.Drawing.Size(195, 21)
+        Me.lblDetailsCorrect.Size = New System.Drawing.Size(202, 21)
         Me.lblDetailsCorrect.TabIndex = 12
-        Me.lblDetailsCorrect.Text = "Are your details correct?"
+        Me.lblDetailsCorrect.Text = "Are these details correct?"
         '
         'lblYourDetails
         '
         Me.lblYourDetails.AutoSize = True
         Me.lblYourDetails.Font = New System.Drawing.Font("Nirmala UI", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblYourDetails.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.lblYourDetails.Location = New System.Drawing.Point(180, 30)
+        Me.lblYourDetails.Location = New System.Drawing.Point(185, 30)
         Me.lblYourDetails.Name = "lblYourDetails"
-        Me.lblYourDetails.Size = New System.Drawing.Size(292, 37)
+        Me.lblYourDetails.Size = New System.Drawing.Size(248, 37)
         Me.lblYourDetails.TabIndex = 11
-        Me.lblYourDetails.Text = "Confirmation of Details"
+        Me.lblYourDetails.Text = "Order Confirmation"
         '
         'gbxDetailsConfirmation
         '
@@ -164,7 +151,7 @@ Partial Class frmEmployeeConfirmation
         Me.gbxDetailsConfirmation.Size = New System.Drawing.Size(285, 151)
         Me.gbxDetailsConfirmation.TabIndex = 10
         Me.gbxDetailsConfirmation.TabStop = False
-        Me.gbxDetailsConfirmation.Text = "Your Information"
+        Me.gbxDetailsConfirmation.Text = "Order Information"
         '
         'btnNext
         '
@@ -193,32 +180,45 @@ Partial Class frmEmployeeConfirmation
         Me.btnBack.Text = "Back"
         Me.btnBack.UseVisualStyleBackColor = False
         '
-        'frmEmployeeConfirmation
+        'btnExit
+        '
+        Me.btnExit.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.btnExit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnExit.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnExit.ForeColor = System.Drawing.Color.White
+        Me.btnExit.Location = New System.Drawing.Point(308, 379)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(93, 37)
+        Me.btnExit.TabIndex = 11
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = False
+        '
+        'frmOrderProcessing
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(211, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(216, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(729, 428)
-        Me.Controls.Add(Me.gbxEmployeeInformation)
         Me.Controls.Add(Me.btnExit)
-        Me.Name = "frmEmployeeConfirmation"
-        Me.Text = "Employee Information"
+        Me.Controls.Add(Me.gbxEmployeeInformation)
+        Me.Name = "frmOrderProcessing"
+        Me.Text = "Order Processing"
         Me.gbxEmployeeInformation.ResumeLayout(False)
         Me.gbxEmployeeInformation.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents btnExit As Button
     Friend WithEvents gbxEmployeeInformation As GroupBox
-    Friend WithEvents btnNext As Button
-    Friend WithEvents btnBack As Button
-    Friend WithEvents gbxDetailsConfirmation As GroupBox
-    Friend WithEvents lblYourDetails As Label
-    Friend WithEvents lblDetailsCorrect As Label
+    Friend WithEvents btnUpdateDetails As Button
+    Friend WithEvents lblUpdateDetails As Label
+    Friend WithEvents lblContinue As Label
     Friend WithEvents rdoCorrectNo As RadioButton
     Friend WithEvents rdoCorrectYes As RadioButton
-    Friend WithEvents lblContinue As Label
-    Friend WithEvents lblUpdateDetails As Label
-    Friend WithEvents btnUpdateDetails As Button
+    Friend WithEvents lblDetailsCorrect As Label
+    Friend WithEvents lblYourDetails As Label
+    Friend WithEvents gbxDetailsConfirmation As GroupBox
+    Friend WithEvents btnNext As Button
+    Friend WithEvents btnBack As Button
+    Friend WithEvents btnExit As Button
 End Class

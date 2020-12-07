@@ -24,17 +24,19 @@ Partial Class frmSignUp
     Private Sub InitializeComponent()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.lblSignUpInfo = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.lblSignUp = New System.Windows.Forms.Label()
         Me.gbxSigningUp = New System.Windows.Forms.GroupBox()
+        Me.btnSignUp = New System.Windows.Forms.Button()
         Me.gbxLogin = New System.Windows.Forms.GroupBox()
+        Me.btnLogin = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.btnSignUp = New System.Windows.Forms.Button()
-        Me.btnLogin = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
+        Me.lblEmail = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.gbxSigningUp.SuspendLayout()
         Me.gbxLogin.SuspendLayout()
         Me.SuspendLayout()
@@ -43,7 +45,7 @@ Partial Class frmSignUp
         '
         Me.TextBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TextBox1.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.TextBox1.Location = New System.Drawing.Point(86, 118)
+        Me.TextBox1.Location = New System.Drawing.Point(86, 158)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(134, 34)
         Me.TextBox1.TabIndex = 2
@@ -58,14 +60,6 @@ Partial Class frmSignUp
         Me.lblSignUpInfo.TabIndex = 1
         Me.lblSignUpInfo.Text = "Sign up with your email"
         '
-        'TextBox2
-        '
-        Me.TextBox2.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.TextBox2.Location = New System.Drawing.Point(86, 181)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(134, 34)
-        Me.TextBox2.TabIndex = 3
-        '
         'lblSignUp
         '
         Me.lblSignUp.AutoSize = True
@@ -79,10 +73,10 @@ Partial Class frmSignUp
         'gbxSigningUp
         '
         Me.gbxSigningUp.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.gbxSigningUp.Controls.Add(Me.lblEmail)
         Me.gbxSigningUp.Controls.Add(Me.btnSignUp)
         Me.gbxSigningUp.Controls.Add(Me.lblSignUp)
         Me.gbxSigningUp.Controls.Add(Me.TextBox1)
-        Me.gbxSigningUp.Controls.Add(Me.TextBox2)
         Me.gbxSigningUp.Controls.Add(Me.lblSignUpInfo)
         Me.gbxSigningUp.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.gbxSigningUp.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -92,9 +86,24 @@ Partial Class frmSignUp
         Me.gbxSigningUp.TabIndex = 4
         Me.gbxSigningUp.TabStop = False
         '
+        'btnSignUp
+        '
+        Me.btnSignUp.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.btnSignUp.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnSignUp.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSignUp.ForeColor = System.Drawing.Color.White
+        Me.btnSignUp.Location = New System.Drawing.Point(104, 242)
+        Me.btnSignUp.Name = "btnSignUp"
+        Me.btnSignUp.Size = New System.Drawing.Size(93, 37)
+        Me.btnSignUp.TabIndex = 4
+        Me.btnSignUp.Text = "Sign Up"
+        Me.btnSignUp.UseVisualStyleBackColor = False
+        '
         'gbxLogin
         '
         Me.gbxLogin.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.gbxLogin.Controls.Add(Me.Label4)
+        Me.gbxLogin.Controls.Add(Me.Label3)
         Me.gbxLogin.Controls.Add(Me.btnLogin)
         Me.gbxLogin.Controls.Add(Me.Label1)
         Me.gbxLogin.Controls.Add(Me.TextBox3)
@@ -106,6 +115,19 @@ Partial Class frmSignUp
         Me.gbxLogin.Size = New System.Drawing.Size(292, 301)
         Me.gbxLogin.TabIndex = 5
         Me.gbxLogin.TabStop = False
+        '
+        'btnLogin
+        '
+        Me.btnLogin.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.btnLogin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnLogin.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLogin.ForeColor = System.Drawing.Color.White
+        Me.btnLogin.Location = New System.Drawing.Point(103, 242)
+        Me.btnLogin.Name = "btnLogin"
+        Me.btnLogin.Size = New System.Drawing.Size(93, 37)
+        Me.btnLogin.TabIndex = 5
+        Me.btnLogin.Text = "Login"
+        Me.btnLogin.UseVisualStyleBackColor = False
         '
         'Label1
         '
@@ -121,7 +143,7 @@ Partial Class frmSignUp
         '
         Me.TextBox3.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TextBox3.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.TextBox3.Location = New System.Drawing.Point(86, 118)
+        Me.TextBox3.Location = New System.Drawing.Point(94, 118)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(134, 34)
         Me.TextBox3.TabIndex = 2
@@ -129,7 +151,7 @@ Partial Class frmSignUp
         'TextBox4
         '
         Me.TextBox4.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.TextBox4.Location = New System.Drawing.Point(86, 181)
+        Me.TextBox4.Location = New System.Drawing.Point(94, 181)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(134, 34)
         Me.TextBox4.TabIndex = 3
@@ -144,32 +166,6 @@ Partial Class frmSignUp
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Login using your email"
         '
-        'btnSignUp
-        '
-        Me.btnSignUp.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.btnSignUp.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnSignUp.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSignUp.ForeColor = System.Drawing.Color.White
-        Me.btnSignUp.Location = New System.Drawing.Point(109, 242)
-        Me.btnSignUp.Name = "btnSignUp"
-        Me.btnSignUp.Size = New System.Drawing.Size(93, 37)
-        Me.btnSignUp.TabIndex = 4
-        Me.btnSignUp.Text = "Sign Up"
-        Me.btnSignUp.UseVisualStyleBackColor = False
-        '
-        'btnLogin
-        '
-        Me.btnLogin.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.btnLogin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnLogin.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLogin.ForeColor = System.Drawing.Color.White
-        Me.btnLogin.Location = New System.Drawing.Point(103, 242)
-        Me.btnLogin.Name = "btnLogin"
-        Me.btnLogin.Size = New System.Drawing.Size(93, 37)
-        Me.btnLogin.TabIndex = 5
-        Me.btnLogin.Text = "Login"
-        Me.btnLogin.UseVisualStyleBackColor = False
-        '
         'btnExit
         '
         Me.btnExit.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
@@ -182,6 +178,36 @@ Partial Class frmSignUp
         Me.btnExit.TabIndex = 6
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = False
+        '
+        'lblEmail
+        '
+        Me.lblEmail.AutoSize = True
+        Me.lblEmail.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEmail.Location = New System.Drawing.Point(29, 166)
+        Me.lblEmail.Name = "lblEmail"
+        Me.lblEmail.Size = New System.Drawing.Size(55, 21)
+        Me.lblEmail.TabIndex = 5
+        Me.lblEmail.Text = "Email:"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(33, 126)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(55, 21)
+        Me.Label3.TabIndex = 6
+        Me.Label3.Text = "Email:"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(6, 189)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(86, 21)
+        Me.Label4.TabIndex = 7
+        Me.Label4.Text = "Password:"
         '
         'frmSignUp
         '
@@ -207,7 +233,6 @@ Partial Class frmSignUp
 
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents lblSignUpInfo As Label
-    Friend WithEvents TextBox2 As TextBox
     Friend WithEvents lblSignUp As Label
     Friend WithEvents gbxSigningUp As GroupBox
     Friend WithEvents btnSignUp As Button
@@ -218,4 +243,7 @@ Partial Class frmSignUp
     Friend WithEvents Label2 As Label
     Friend WithEvents btnLogin As Button
     Friend WithEvents btnExit As Button
+    Friend WithEvents lblEmail As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label3 As Label
 End Class

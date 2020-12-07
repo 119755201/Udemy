@@ -1,4 +1,4 @@
-﻿Public Class frmInformationConfirmation
+﻿Public Class frmEmployeeConfirmation
     Private Sub frmCustomerInformation_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub

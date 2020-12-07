@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmClothingOptions
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmClothingOptions
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.gbxShorts = New System.Windows.Forms.GroupBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
@@ -52,6 +52,9 @@ Partial Class frmClothingOptions
         Me.btnExit = New System.Windows.Forms.Button()
         Me.btnNext = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
+        Me.btnAddTotals = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.gbxShorts.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gbxJersey.SuspendLayout()
@@ -63,6 +66,7 @@ Partial Class frmClothingOptions
         'gbxShorts
         '
         Me.gbxShorts.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.gbxShorts.Controls.Add(Me.btnAddTotals)
         Me.gbxShorts.Controls.Add(Me.TextBox4)
         Me.gbxShorts.Controls.Add(Me.lblShortsCostSubtotal)
         Me.gbxShorts.Controls.Add(Me.TextBox3)
@@ -73,14 +77,14 @@ Partial Class frmClothingOptions
         Me.gbxShorts.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gbxShorts.Location = New System.Drawing.Point(28, 12)
         Me.gbxShorts.Name = "gbxShorts"
-        Me.gbxShorts.Size = New System.Drawing.Size(191, 284)
+        Me.gbxShorts.Size = New System.Drawing.Size(191, 294)
         Me.gbxShorts.TabIndex = 24
         Me.gbxShorts.TabStop = False
         Me.gbxShorts.Text = "Shorts"
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(143, 251)
+        Me.TextBox4.Location = New System.Drawing.Point(143, 214)
         Me.TextBox4.MaxLength = 20
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.ReadOnly = True
@@ -92,7 +96,7 @@ Partial Class frmClothingOptions
         Me.lblShortsCostSubtotal.AutoSize = True
         Me.lblShortsCostSubtotal.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblShortsCostSubtotal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.lblShortsCostSubtotal.Location = New System.Drawing.Point(6, 252)
+        Me.lblShortsCostSubtotal.Location = New System.Drawing.Point(6, 215)
         Me.lblShortsCostSubtotal.Name = "lblShortsCostSubtotal"
         Me.lblShortsCostSubtotal.Size = New System.Drawing.Size(82, 21)
         Me.lblShortsCostSubtotal.TabIndex = 34
@@ -100,7 +104,7 @@ Partial Class frmClothingOptions
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(143, 216)
+        Me.TextBox3.Location = New System.Drawing.Point(143, 184)
         Me.TextBox3.MaxLength = 20
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(41, 24)
@@ -111,7 +115,7 @@ Partial Class frmClothingOptions
         Me.lblShortsRequired.AutoSize = True
         Me.lblShortsRequired.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblShortsRequired.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.lblShortsRequired.Location = New System.Drawing.Point(6, 219)
+        Me.lblShortsRequired.Location = New System.Drawing.Point(6, 181)
         Me.lblShortsRequired.Name = "lblShortsRequired"
         Me.lblShortsRequired.Size = New System.Drawing.Size(131, 21)
         Me.lblShortsRequired.TabIndex = 32
@@ -119,7 +123,7 @@ Partial Class frmClothingOptions
         '
         'txtTownCity
         '
-        Me.txtTownCity.Location = New System.Drawing.Point(143, 184)
+        Me.txtTownCity.Location = New System.Drawing.Point(143, 149)
         Me.txtTownCity.MaxLength = 20
         Me.txtTownCity.Name = "txtTownCity"
         Me.txtTownCity.ReadOnly = True
@@ -131,7 +135,7 @@ Partial Class frmClothingOptions
         Me.lblShortsPrice.AutoSize = True
         Me.lblShortsPrice.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblShortsPrice.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.lblShortsPrice.Location = New System.Drawing.Point(6, 184)
+        Me.lblShortsPrice.Location = New System.Drawing.Point(6, 149)
         Me.lblShortsPrice.Name = "lblShortsPrice"
         Me.lblShortsPrice.Size = New System.Drawing.Size(100, 21)
         Me.lblShortsPrice.TabIndex = 30
@@ -141,13 +145,14 @@ Partial Class frmClothingOptions
         '
         Me.PictureBox3.Location = New System.Drawing.Point(37, 37)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(100, 132)
+        Me.PictureBox3.Size = New System.Drawing.Size(100, 98)
         Me.PictureBox3.TabIndex = 29
         Me.PictureBox3.TabStop = False
         '
         'gbxJersey
         '
         Me.gbxJersey.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.gbxJersey.Controls.Add(Me.Button1)
         Me.gbxJersey.Controls.Add(Me.TextBox5)
         Me.gbxJersey.Controls.Add(Me.lblJerseyCostSubtotal)
         Me.gbxJersey.Controls.Add(Me.TextBox6)
@@ -159,14 +164,14 @@ Partial Class frmClothingOptions
         Me.gbxJersey.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gbxJersey.Location = New System.Drawing.Point(264, 12)
         Me.gbxJersey.Name = "gbxJersey"
-        Me.gbxJersey.Size = New System.Drawing.Size(191, 284)
+        Me.gbxJersey.Size = New System.Drawing.Size(191, 294)
         Me.gbxJersey.TabIndex = 25
         Me.gbxJersey.TabStop = False
         Me.gbxJersey.Text = "Jersey"
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(143, 249)
+        Me.TextBox5.Location = New System.Drawing.Point(141, 215)
         Me.TextBox5.MaxLength = 20
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.ReadOnly = True
@@ -178,7 +183,7 @@ Partial Class frmClothingOptions
         Me.lblJerseyCostSubtotal.AutoSize = True
         Me.lblJerseyCostSubtotal.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblJerseyCostSubtotal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.lblJerseyCostSubtotal.Location = New System.Drawing.Point(6, 250)
+        Me.lblJerseyCostSubtotal.Location = New System.Drawing.Point(4, 216)
         Me.lblJerseyCostSubtotal.Name = "lblJerseyCostSubtotal"
         Me.lblJerseyCostSubtotal.Size = New System.Drawing.Size(82, 21)
         Me.lblJerseyCostSubtotal.TabIndex = 38
@@ -186,7 +191,7 @@ Partial Class frmClothingOptions
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(143, 219)
+        Me.TextBox6.Location = New System.Drawing.Point(141, 183)
         Me.TextBox6.MaxLength = 20
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(41, 24)
@@ -197,7 +202,7 @@ Partial Class frmClothingOptions
         Me.lblJerseyRequired.AutoSize = True
         Me.lblJerseyRequired.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblJerseyRequired.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.lblJerseyRequired.Location = New System.Drawing.Point(2, 220)
+        Me.lblJerseyRequired.Location = New System.Drawing.Point(0, 180)
         Me.lblJerseyRequired.Name = "lblJerseyRequired"
         Me.lblJerseyRequired.Size = New System.Drawing.Size(135, 21)
         Me.lblJerseyRequired.TabIndex = 36
@@ -205,7 +210,7 @@ Partial Class frmClothingOptions
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(143, 184)
+        Me.TextBox1.Location = New System.Drawing.Point(141, 149)
         Me.TextBox1.MaxLength = 20
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
@@ -217,7 +222,7 @@ Partial Class frmClothingOptions
         Me.lblJerseyPrice.AutoSize = True
         Me.lblJerseyPrice.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblJerseyPrice.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.lblJerseyPrice.Location = New System.Drawing.Point(6, 188)
+        Me.lblJerseyPrice.Location = New System.Drawing.Point(4, 150)
         Me.lblJerseyPrice.Name = "lblJerseyPrice"
         Me.lblJerseyPrice.Size = New System.Drawing.Size(97, 21)
         Me.lblJerseyPrice.TabIndex = 32
@@ -227,7 +232,7 @@ Partial Class frmClothingOptions
         '
         Me.PictureBox1.Location = New System.Drawing.Point(37, 37)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(100, 132)
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 98)
         Me.PictureBox1.TabIndex = 27
         Me.PictureBox1.TabStop = False
         '
@@ -243,6 +248,7 @@ Partial Class frmClothingOptions
         'gbxHoodieJumper
         '
         Me.gbxHoodieJumper.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.gbxHoodieJumper.Controls.Add(Me.Button2)
         Me.gbxHoodieJumper.Controls.Add(Me.TextBox7)
         Me.gbxHoodieJumper.Controls.Add(Me.lblHoodieSubtotal)
         Me.gbxHoodieJumper.Controls.Add(Me.TextBox8)
@@ -253,14 +259,14 @@ Partial Class frmClothingOptions
         Me.gbxHoodieJumper.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gbxHoodieJumper.Location = New System.Drawing.Point(506, 12)
         Me.gbxHoodieJumper.Name = "gbxHoodieJumper"
-        Me.gbxHoodieJumper.Size = New System.Drawing.Size(196, 284)
+        Me.gbxHoodieJumper.Size = New System.Drawing.Size(196, 294)
         Me.gbxHoodieJumper.TabIndex = 27
         Me.gbxHoodieJumper.TabStop = False
         Me.gbxHoodieJumper.Text = "Hoodie/Jumper"
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(148, 252)
+        Me.TextBox7.Location = New System.Drawing.Point(148, 216)
         Me.TextBox7.MaxLength = 20
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.ReadOnly = True
@@ -272,7 +278,7 @@ Partial Class frmClothingOptions
         Me.lblHoodieSubtotal.AutoSize = True
         Me.lblHoodieSubtotal.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblHoodieSubtotal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.lblHoodieSubtotal.Location = New System.Drawing.Point(6, 252)
+        Me.lblHoodieSubtotal.Location = New System.Drawing.Point(6, 216)
         Me.lblHoodieSubtotal.Name = "lblHoodieSubtotal"
         Me.lblHoodieSubtotal.Size = New System.Drawing.Size(82, 21)
         Me.lblHoodieSubtotal.TabIndex = 42
@@ -280,7 +286,7 @@ Partial Class frmClothingOptions
         '
         'TextBox8
         '
-        Me.TextBox8.Location = New System.Drawing.Point(148, 217)
+        Me.TextBox8.Location = New System.Drawing.Point(148, 180)
         Me.TextBox8.MaxLength = 20
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(41, 24)
@@ -291,7 +297,7 @@ Partial Class frmClothingOptions
         Me.lblHoodiesRequired.AutoSize = True
         Me.lblHoodiesRequired.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblHoodiesRequired.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.lblHoodiesRequired.Location = New System.Drawing.Point(6, 220)
+        Me.lblHoodiesRequired.Location = New System.Drawing.Point(6, 180)
         Me.lblHoodiesRequired.Name = "lblHoodiesRequired"
         Me.lblHoodiesRequired.Size = New System.Drawing.Size(145, 21)
         Me.lblHoodiesRequired.TabIndex = 40
@@ -299,7 +305,7 @@ Partial Class frmClothingOptions
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(148, 185)
+        Me.TextBox2.Location = New System.Drawing.Point(148, 150)
         Me.TextBox2.MaxLength = 20
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.ReadOnly = True
@@ -310,7 +316,7 @@ Partial Class frmClothingOptions
         '
         Me.PictureBox2.Location = New System.Drawing.Point(46, 37)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(100, 132)
+        Me.PictureBox2.Size = New System.Drawing.Size(100, 98)
         Me.PictureBox2.TabIndex = 28
         Me.PictureBox2.TabStop = False
         '
@@ -319,7 +325,7 @@ Partial Class frmClothingOptions
         Me.lblHoodiePrice.AutoSize = True
         Me.lblHoodiePrice.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblHoodiePrice.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.lblHoodiePrice.Location = New System.Drawing.Point(6, 185)
+        Me.lblHoodiePrice.Location = New System.Drawing.Point(6, 150)
         Me.lblHoodiePrice.Name = "lblHoodiePrice"
         Me.lblHoodiePrice.Size = New System.Drawing.Size(107, 21)
         Me.lblHoodiePrice.TabIndex = 34
@@ -384,6 +390,45 @@ Partial Class frmClothingOptions
         Me.btnBack.Text = "Back"
         Me.btnBack.UseVisualStyleBackColor = False
         '
+        'btnAddTotals
+        '
+        Me.btnAddTotals.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.btnAddTotals.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnAddTotals.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAddTotals.ForeColor = System.Drawing.Color.White
+        Me.btnAddTotals.Location = New System.Drawing.Point(37, 251)
+        Me.btnAddTotals.Name = "btnAddTotals"
+        Me.btnAddTotals.Size = New System.Drawing.Size(93, 37)
+        Me.btnAddTotals.TabIndex = 44
+        Me.btnAddTotals.Text = "Add Totals"
+        Me.btnAddTotals.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(42, 251)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(93, 37)
+        Me.Button1.TabIndex = 44
+        Me.Button1.Text = "Add Totals"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.White
+        Me.Button2.Location = New System.Drawing.Point(53, 251)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(93, 37)
+        Me.Button2.TabIndex = 44
+        Me.Button2.Text = "Add Totals"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
         'frmClothingOptions
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -444,4 +489,7 @@ Partial Class frmClothingOptions
     Friend WithEvents btnExit As Button
     Friend WithEvents btnNext As Button
     Friend WithEvents btnBack As Button
+    Friend WithEvents btnAddTotals As Button
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class
