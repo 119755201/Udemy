@@ -23,13 +23,13 @@ Partial Class frmAdditionalInformation
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.gbxEmployeeInformation = New System.Windows.Forms.GroupBox()
+        Me.rdoCorrectNo = New System.Windows.Forms.RadioButton()
+        Me.rdoCorrectYes = New System.Windows.Forms.RadioButton()
+        Me.lblDetailsCorrect = New System.Windows.Forms.Label()
         Me.lblImportantInformation = New System.Windows.Forms.Label()
         Me.gbxInformationConfirmation = New System.Windows.Forms.GroupBox()
         Me.btnNext = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
-        Me.rdoCorrectNo = New System.Windows.Forms.RadioButton()
-        Me.rdoCorrectYes = New System.Windows.Forms.RadioButton()
-        Me.lblDetailsCorrect = New System.Windows.Forms.Label()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.gbxEmployeeInformation.SuspendLayout()
         Me.SuspendLayout()
@@ -51,53 +51,6 @@ Partial Class frmAdditionalInformation
         Me.gbxEmployeeInformation.Size = New System.Drawing.Size(626, 310)
         Me.gbxEmployeeInformation.TabIndex = 10
         Me.gbxEmployeeInformation.TabStop = False
-        '
-        'lblImportantInformation
-        '
-        Me.lblImportantInformation.Font = New System.Drawing.Font("Nirmala UI", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblImportantInformation.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.lblImportantInformation.Location = New System.Drawing.Point(178, 30)
-        Me.lblImportantInformation.Name = "lblImportantInformation"
-        Me.lblImportantInformation.Size = New System.Drawing.Size(292, 37)
-        Me.lblImportantInformation.TabIndex = 11
-        Me.lblImportantInformation.Text = "Important Information"
-        '
-        'gbxInformationConfirmation
-        '
-        Me.gbxInformationConfirmation.BackColor = System.Drawing.Color.White
-        Me.gbxInformationConfirmation.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.gbxInformationConfirmation.Location = New System.Drawing.Point(32, 87)
-        Me.gbxInformationConfirmation.Name = "gbxInformationConfirmation"
-        Me.gbxInformationConfirmation.Size = New System.Drawing.Size(558, 96)
-        Me.gbxInformationConfirmation.TabIndex = 10
-        Me.gbxInformationConfirmation.TabStop = False
-        Me.gbxInformationConfirmation.Text = "Information Confirmation"
-        '
-        'btnNext
-        '
-        Me.btnNext.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.btnNext.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnNext.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnNext.ForeColor = System.Drawing.Color.White
-        Me.btnNext.Location = New System.Drawing.Point(418, 267)
-        Me.btnNext.Name = "btnNext"
-        Me.btnNext.Size = New System.Drawing.Size(93, 37)
-        Me.btnNext.TabIndex = 9
-        Me.btnNext.Text = "Next"
-        Me.btnNext.UseVisualStyleBackColor = False
-        '
-        'btnBack
-        '
-        Me.btnBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.btnBack.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnBack.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBack.ForeColor = System.Drawing.Color.White
-        Me.btnBack.Location = New System.Drawing.Point(108, 267)
-        Me.btnBack.Name = "btnBack"
-        Me.btnBack.Size = New System.Drawing.Size(93, 37)
-        Me.btnBack.TabIndex = 4
-        Me.btnBack.Text = "Back"
-        Me.btnBack.UseVisualStyleBackColor = False
         '
         'rdoCorrectNo
         '
@@ -133,6 +86,53 @@ Partial Class frmAdditionalInformation
         Me.lblDetailsCorrect.Size = New System.Drawing.Size(390, 21)
         Me.lblDetailsCorrect.TabIndex = 15
         Me.lblDetailsCorrect.Text = "Have you read and understood the above details?"
+        '
+        'lblImportantInformation
+        '
+        Me.lblImportantInformation.Font = New System.Drawing.Font("Nirmala UI", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblImportantInformation.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.lblImportantInformation.Location = New System.Drawing.Point(178, 30)
+        Me.lblImportantInformation.Name = "lblImportantInformation"
+        Me.lblImportantInformation.Size = New System.Drawing.Size(292, 37)
+        Me.lblImportantInformation.TabIndex = 11
+        Me.lblImportantInformation.Text = "Important Information"
+        '
+        'gbxInformationConfirmation
+        '
+        Me.gbxInformationConfirmation.BackColor = System.Drawing.Color.White
+        Me.gbxInformationConfirmation.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gbxInformationConfirmation.Location = New System.Drawing.Point(32, 87)
+        Me.gbxInformationConfirmation.Name = "gbxInformationConfirmation"
+        Me.gbxInformationConfirmation.Size = New System.Drawing.Size(558, 96)
+        Me.gbxInformationConfirmation.TabIndex = 10
+        Me.gbxInformationConfirmation.TabStop = False
+        Me.gbxInformationConfirmation.Text = "Information Confirmation"
+        '
+        'btnNext
+        '
+        Me.btnNext.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.btnNext.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnNext.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnNext.ForeColor = System.Drawing.Color.White
+        Me.btnNext.Location = New System.Drawing.Point(434, 250)
+        Me.btnNext.Name = "btnNext"
+        Me.btnNext.Size = New System.Drawing.Size(93, 37)
+        Me.btnNext.TabIndex = 9
+        Me.btnNext.Text = "Next"
+        Me.btnNext.UseVisualStyleBackColor = False
+        '
+        'btnBack
+        '
+        Me.btnBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.btnBack.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnBack.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBack.ForeColor = System.Drawing.Color.White
+        Me.btnBack.Location = New System.Drawing.Point(107, 250)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(93, 37)
+        Me.btnBack.TabIndex = 4
+        Me.btnBack.Text = "Back"
+        Me.btnBack.UseVisualStyleBackColor = False
         '
         'btnExit
         '
