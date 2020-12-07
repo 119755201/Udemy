@@ -183,6 +183,7 @@ Partial Class frmCustomerDetails
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.gbxCustomerInformation)
         Me.Name = "frmCustomerDetails"
+        Me.Text = "Customer Details (1/3)"
         Me.gbxCustomerInformation.ResumeLayout(False)
         Me.gbxCustomerInformation.PerformLayout()
         Me.ResumeLayout(False)

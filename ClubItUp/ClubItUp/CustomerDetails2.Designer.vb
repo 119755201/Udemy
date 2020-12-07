@@ -23,6 +23,8 @@ Partial Class frmCustomerDetails2
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.gbxCustomerInformation = New System.Windows.Forms.GroupBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.lblEirCode = New System.Windows.Forms.Label()
         Me.txtTownCity = New System.Windows.Forms.TextBox()
         Me.lblAddressInformation = New System.Windows.Forms.Label()
         Me.txtStreetAddress = New System.Windows.Forms.TextBox()
@@ -33,8 +35,6 @@ Partial Class frmCustomerDetails2
         Me.btnNext = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.lblEirCode = New System.Windows.Forms.Label()
         Me.gbxCustomerInformation.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -59,6 +59,26 @@ Partial Class frmCustomerDetails2
         Me.gbxCustomerInformation.Size = New System.Drawing.Size(626, 310)
         Me.gbxCustomerInformation.TabIndex = 11
         Me.gbxCustomerInformation.TabStop = False
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(283, 208)
+        Me.TextBox1.MaxLength = 7
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(197, 20)
+        Me.TextBox1.TabIndex = 23
+        '
+        'lblEirCode
+        '
+        Me.lblEirCode.AutoSize = True
+        Me.lblEirCode.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEirCode.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.lblEirCode.Location = New System.Drawing.Point(142, 207)
+        Me.lblEirCode.Name = "lblEirCode"
+        Me.lblEirCode.Size = New System.Drawing.Size(74, 21)
+        Me.lblEirCode.TabIndex = 22
+        Me.lblEirCode.Text = "Eir Code"
         '
         'txtTownCity
         '
@@ -168,26 +188,6 @@ Partial Class frmCustomerDetails2
         Me.btnExit.TabIndex = 12
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = False
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(283, 210)
-        Me.TextBox1.MaxLength = 7
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(197, 20)
-        Me.TextBox1.TabIndex = 23
-        '
-        'lblEirCode
-        '
-        Me.lblEirCode.AutoSize = True
-        Me.lblEirCode.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblEirCode.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.lblEirCode.Location = New System.Drawing.Point(142, 209)
-        Me.lblEirCode.Name = "lblEirCode"
-        Me.lblEirCode.Size = New System.Drawing.Size(74, 21)
-        Me.lblEirCode.TabIndex = 22
-        Me.lblEirCode.Text = "Eir Code"
         '
         'frmCustomerDetails2
         '

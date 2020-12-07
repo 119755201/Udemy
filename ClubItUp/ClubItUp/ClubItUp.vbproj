@@ -103,6 +103,18 @@
     <Compile Include="CustomerDetails3.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="CustomisationOptions.Designer.vb">
+      <DependentUpon>CustomisationOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomisationOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomisationOptions2.Designer.vb">
+      <DependentUpon>CustomisationOptions2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomisationOptions2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="EmployeeInformation.Designer.vb">
       <DependentUpon>EmployeeInformation.vb</DependentUpon>
     </Compile>
@@ -153,6 +165,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CustomerDetails3.resx">
       <DependentUpon>CustomerDetails3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomisationOptions.resx">
+      <DependentUpon>CustomisationOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomisationOptions2.resx">
+      <DependentUpon>CustomisationOptions2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EmployeeInformation.resx">
       <DependentUpon>EmployeeInformation.vb</DependentUpon>
