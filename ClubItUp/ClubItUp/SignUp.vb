@@ -1,5 +1,6 @@
 ﻿Public Class frmSignUp
 
+
     Private Sub frmSignUp_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
@@ -7,11 +8,9 @@
 
     Private Sub btnSignUp_Click(sender As Object, e As EventArgs) Handles btnSignUp.Click
 
-        Dim OBJ As New frmRegisterDetails
-        OBJ.strUserEmail = txtUserEmail.Text
-        OBJ.Show()
+        EmployeeEmail = txtUserEmail.Text
+        frmRegisterDetails.Show()
         Me.Hide()
-
 
     End Sub
 

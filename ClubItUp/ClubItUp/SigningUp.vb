@@ -1,7 +1,5 @@
 ﻿Public Class frmRegisterDetails
 
-    Public Property strUserEmail As String
-
     Dim strPassword, strRetypedPassword, strUserPassword As String
 
     Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
@@ -14,16 +12,11 @@
             MessageBox.Show("Password fields do not match. Please correct your input")
 
         Else
-
+            FullName = txtEmployeeName.Text
             txtPassword.Text = txtRetypedPassword.Text
             Me.Close()
             txtRetypedPassword.Text = strUserPassword
-
-            Dim OBJ As New frmEmployeeConfirmation
-            OBJ.strUserInfo = txtEmployeeName.Text
-            OBJ.strUserEmail = txtEmployeeEmail.Text
-            OBJ.Show()
-            Me.Hide()
+            frmEmployeeConfirmation.Show()
 
         End If
 
@@ -31,7 +24,7 @@
 
     Private Sub frmRegisterDetails_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        txtEmployeeEmail.Text = strUserEmail
+        txtEmployeeEmail.Text = EmployeeEmail
 
     End Sub
 End Class

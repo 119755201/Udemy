@@ -1,13 +1,11 @@
 ﻿Public Class frmEmployeeConfirmation
 
-    Public Property strUserEmail As String
-    Public Property strUserInfo As String
-
-
 
     Private Sub frmCustomerInformation_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        lstUserInfoOutput.Items.Add("Customer Email: " & strUserEmail)
+        lstUserInfoOutput.Items.Add("User Name: " & FullName)
+        lstUserInfoOutput.Items.Add("User Email: " & EmployeeEmail)
+
 
     End Sub
 
