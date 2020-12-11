@@ -31,9 +31,9 @@ Partial Class frmEmployeeConfirmation
         Me.rdoCorrectYes = New System.Windows.Forms.RadioButton()
         Me.lblDetailsCorrect = New System.Windows.Forms.Label()
         Me.lblYourDetails = New System.Windows.Forms.Label()
-        Me.gbxDetailsConfirmation = New System.Windows.Forms.GroupBox()
         Me.btnNext = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
+        Me.lstUserInfoOutput = New System.Windows.Forms.ListBox()
         Me.gbxEmployeeInformation.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -53,6 +53,7 @@ Partial Class frmEmployeeConfirmation
         'gbxEmployeeInformation
         '
         Me.gbxEmployeeInformation.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.gbxEmployeeInformation.Controls.Add(Me.lstUserInfoOutput)
         Me.gbxEmployeeInformation.Controls.Add(Me.btnUpdateDetails)
         Me.gbxEmployeeInformation.Controls.Add(Me.lblUpdateDetails)
         Me.gbxEmployeeInformation.Controls.Add(Me.lblContinue)
@@ -60,7 +61,6 @@ Partial Class frmEmployeeConfirmation
         Me.gbxEmployeeInformation.Controls.Add(Me.rdoCorrectYes)
         Me.gbxEmployeeInformation.Controls.Add(Me.lblDetailsCorrect)
         Me.gbxEmployeeInformation.Controls.Add(Me.lblYourDetails)
-        Me.gbxEmployeeInformation.Controls.Add(Me.gbxDetailsConfirmation)
         Me.gbxEmployeeInformation.Controls.Add(Me.btnNext)
         Me.gbxEmployeeInformation.Controls.Add(Me.btnBack)
         Me.gbxEmployeeInformation.FlatStyle = System.Windows.Forms.FlatStyle.Popup
@@ -155,17 +155,6 @@ Partial Class frmEmployeeConfirmation
         Me.lblYourDetails.TabIndex = 11
         Me.lblYourDetails.Text = "Confirmation of Details"
         '
-        'gbxDetailsConfirmation
-        '
-        Me.gbxDetailsConfirmation.BackColor = System.Drawing.Color.White
-        Me.gbxDetailsConfirmation.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.gbxDetailsConfirmation.Location = New System.Drawing.Point(33, 85)
-        Me.gbxDetailsConfirmation.Name = "gbxDetailsConfirmation"
-        Me.gbxDetailsConfirmation.Size = New System.Drawing.Size(285, 151)
-        Me.gbxDetailsConfirmation.TabIndex = 10
-        Me.gbxDetailsConfirmation.TabStop = False
-        Me.gbxDetailsConfirmation.Text = "Your Information"
-        '
         'btnNext
         '
         Me.btnNext.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
@@ -193,6 +182,16 @@ Partial Class frmEmployeeConfirmation
         Me.btnBack.Text = "Back"
         Me.btnBack.UseVisualStyleBackColor = False
         '
+        'lstUserInfoOutput
+        '
+        Me.lstUserInfoOutput.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstUserInfoOutput.FormattingEnabled = True
+        Me.lstUserInfoOutput.ItemHeight = 19
+        Me.lstUserInfoOutput.Location = New System.Drawing.Point(58, 87)
+        Me.lstUserInfoOutput.Name = "lstUserInfoOutput"
+        Me.lstUserInfoOutput.Size = New System.Drawing.Size(235, 118)
+        Me.lstUserInfoOutput.TabIndex = 18
+        '
         'frmEmployeeConfirmation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -213,7 +212,6 @@ Partial Class frmEmployeeConfirmation
     Friend WithEvents gbxEmployeeInformation As GroupBox
     Friend WithEvents btnNext As Button
     Friend WithEvents btnBack As Button
-    Friend WithEvents gbxDetailsConfirmation As GroupBox
     Friend WithEvents lblYourDetails As Label
     Friend WithEvents lblDetailsCorrect As Label
     Friend WithEvents rdoCorrectNo As RadioButton
@@ -221,4 +219,5 @@ Partial Class frmEmployeeConfirmation
     Friend WithEvents lblContinue As Label
     Friend WithEvents lblUpdateDetails As Label
     Friend WithEvents btnUpdateDetails As Button
+    Friend WithEvents lstUserInfoOutput As ListBox
 End Class
