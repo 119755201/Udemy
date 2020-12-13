@@ -22,12 +22,13 @@ Partial Class frmAdditionalInformation
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAdditionalInformation))
         Me.gbxEmployeeInformation = New System.Windows.Forms.GroupBox()
+        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.rdoCorrectNo = New System.Windows.Forms.RadioButton()
         Me.rdoCorrectYes = New System.Windows.Forms.RadioButton()
         Me.lblDetailsCorrect = New System.Windows.Forms.Label()
         Me.lblImportantInformation = New System.Windows.Forms.Label()
-        Me.gbxInformationConfirmation = New System.Windows.Forms.GroupBox()
         Me.btnNext = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
@@ -37,11 +38,11 @@ Partial Class frmAdditionalInformation
         'gbxEmployeeInformation
         '
         Me.gbxEmployeeInformation.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.gbxEmployeeInformation.Controls.Add(Me.RichTextBox1)
         Me.gbxEmployeeInformation.Controls.Add(Me.rdoCorrectNo)
         Me.gbxEmployeeInformation.Controls.Add(Me.rdoCorrectYes)
         Me.gbxEmployeeInformation.Controls.Add(Me.lblDetailsCorrect)
         Me.gbxEmployeeInformation.Controls.Add(Me.lblImportantInformation)
-        Me.gbxEmployeeInformation.Controls.Add(Me.gbxInformationConfirmation)
         Me.gbxEmployeeInformation.Controls.Add(Me.btnNext)
         Me.gbxEmployeeInformation.Controls.Add(Me.btnBack)
         Me.gbxEmployeeInformation.FlatStyle = System.Windows.Forms.FlatStyle.Popup
@@ -51,6 +52,15 @@ Partial Class frmAdditionalInformation
         Me.gbxEmployeeInformation.Size = New System.Drawing.Size(626, 310)
         Me.gbxEmployeeInformation.TabIndex = 10
         Me.gbxEmployeeInformation.TabStop = False
+        '
+        'RichTextBox1
+        '
+        Me.RichTextBox1.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RichTextBox1.Location = New System.Drawing.Point(25, 59)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.Size = New System.Drawing.Size(586, 140)
+        Me.RichTextBox1.TabIndex = 18
+        Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
         '
         'rdoCorrectNo
         '
@@ -91,22 +101,11 @@ Partial Class frmAdditionalInformation
         '
         Me.lblImportantInformation.Font = New System.Drawing.Font("Nirmala UI", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblImportantInformation.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.lblImportantInformation.Location = New System.Drawing.Point(178, 30)
+        Me.lblImportantInformation.Location = New System.Drawing.Point(178, 19)
         Me.lblImportantInformation.Name = "lblImportantInformation"
         Me.lblImportantInformation.Size = New System.Drawing.Size(292, 37)
         Me.lblImportantInformation.TabIndex = 11
         Me.lblImportantInformation.Text = "Important Information"
-        '
-        'gbxInformationConfirmation
-        '
-        Me.gbxInformationConfirmation.BackColor = System.Drawing.Color.White
-        Me.gbxInformationConfirmation.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.gbxInformationConfirmation.Location = New System.Drawing.Point(32, 87)
-        Me.gbxInformationConfirmation.Name = "gbxInformationConfirmation"
-        Me.gbxInformationConfirmation.Size = New System.Drawing.Size(558, 96)
-        Me.gbxInformationConfirmation.TabIndex = 10
-        Me.gbxInformationConfirmation.TabStop = False
-        Me.gbxInformationConfirmation.Text = "Information Confirmation"
         '
         'btnNext
         '
@@ -165,11 +164,11 @@ Partial Class frmAdditionalInformation
 
     Friend WithEvents gbxEmployeeInformation As GroupBox
     Friend WithEvents lblImportantInformation As Label
-    Friend WithEvents gbxInformationConfirmation As GroupBox
     Friend WithEvents btnNext As Button
     Friend WithEvents btnBack As Button
     Friend WithEvents rdoCorrectNo As RadioButton
     Friend WithEvents rdoCorrectYes As RadioButton
     Friend WithEvents lblDetailsCorrect As Label
     Friend WithEvents btnExit As Button
+    Friend WithEvents RichTextBox1 As RichTextBox
 End Class

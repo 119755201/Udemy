@@ -64,10 +64,10 @@ Partial Class frmRegisterDetails
         '
         'txtEmployeeName
         '
-        Me.txtEmployeeName.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtEmployeeName.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtEmployeeName.ForeColor = System.Drawing.SystemColors.WindowText
         Me.txtEmployeeName.Location = New System.Drawing.Point(86, 118)
+        Me.txtEmployeeName.MaxLength = 30
         Me.txtEmployeeName.Name = "txtEmployeeName"
         Me.txtEmployeeName.Size = New System.Drawing.Size(155, 24)
         Me.txtEmployeeName.TabIndex = 2
@@ -76,6 +76,7 @@ Partial Class frmRegisterDetails
         '
         Me.txtEmployeeEmail.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtEmployeeEmail.Location = New System.Drawing.Point(86, 179)
+        Me.txtEmployeeEmail.MaxLength = 60
         Me.txtEmployeeEmail.Name = "txtEmployeeEmail"
         Me.txtEmployeeEmail.Size = New System.Drawing.Size(155, 24)
         Me.txtEmployeeEmail.TabIndex = 3
@@ -150,10 +151,10 @@ Partial Class frmRegisterDetails
         '
         'txtPassword
         '
-        Me.txtPassword.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtPassword.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!)
         Me.txtPassword.ForeColor = System.Drawing.SystemColors.WindowText
         Me.txtPassword.Location = New System.Drawing.Point(405, 118)
+        Me.txtPassword.MaxLength = 20
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPassword.Size = New System.Drawing.Size(155, 24)
@@ -161,9 +162,9 @@ Partial Class frmRegisterDetails
         '
         'txtRetypedPassword
         '
-        Me.txtRetypedPassword.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtRetypedPassword.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtRetypedPassword.Location = New System.Drawing.Point(405, 179)
+        Me.txtRetypedPassword.MaxLength = 20
         Me.txtRetypedPassword.Name = "txtRetypedPassword"
         Me.txtRetypedPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtRetypedPassword.Size = New System.Drawing.Size(155, 24)

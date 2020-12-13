@@ -24,6 +24,7 @@ Partial Class frmEmployeeConfirmation
     Private Sub InitializeComponent()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.gbxEmployeeInformation = New System.Windows.Forms.GroupBox()
+        Me.lstUserInfoOutput = New System.Windows.Forms.ListBox()
         Me.btnUpdateDetails = New System.Windows.Forms.Button()
         Me.lblUpdateDetails = New System.Windows.Forms.Label()
         Me.lblContinue = New System.Windows.Forms.Label()
@@ -33,7 +34,6 @@ Partial Class frmEmployeeConfirmation
         Me.lblYourDetails = New System.Windows.Forms.Label()
         Me.btnNext = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
-        Me.lstUserInfoOutput = New System.Windows.Forms.ListBox()
         Me.gbxEmployeeInformation.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -70,6 +70,16 @@ Partial Class frmEmployeeConfirmation
         Me.gbxEmployeeInformation.Size = New System.Drawing.Size(626, 310)
         Me.gbxEmployeeInformation.TabIndex = 9
         Me.gbxEmployeeInformation.TabStop = False
+        '
+        'lstUserInfoOutput
+        '
+        Me.lstUserInfoOutput.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstUserInfoOutput.FormattingEnabled = True
+        Me.lstUserInfoOutput.ItemHeight = 19
+        Me.lstUserInfoOutput.Location = New System.Drawing.Point(58, 87)
+        Me.lstUserInfoOutput.Name = "lstUserInfoOutput"
+        Me.lstUserInfoOutput.Size = New System.Drawing.Size(235, 118)
+        Me.lstUserInfoOutput.TabIndex = 18
         '
         'btnUpdateDetails
         '
@@ -181,16 +191,6 @@ Partial Class frmEmployeeConfirmation
         Me.btnBack.TabIndex = 4
         Me.btnBack.Text = "Back"
         Me.btnBack.UseVisualStyleBackColor = False
-        '
-        'lstUserInfoOutput
-        '
-        Me.lstUserInfoOutput.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lstUserInfoOutput.FormattingEnabled = True
-        Me.lstUserInfoOutput.ItemHeight = 19
-        Me.lstUserInfoOutput.Location = New System.Drawing.Point(58, 87)
-        Me.lstUserInfoOutput.Name = "lstUserInfoOutput"
-        Me.lstUserInfoOutput.Size = New System.Drawing.Size(235, 118)
-        Me.lstUserInfoOutput.TabIndex = 18
         '
         'frmEmployeeConfirmation
         '

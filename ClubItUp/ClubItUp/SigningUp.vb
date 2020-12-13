@@ -2,10 +2,16 @@
 
     Dim strPassword, strRetypedPassword, strUserPassword As String
 
+    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+
+        ' hides the current form from view and shows the previous form: frmSignUp '
+        Me.Hide()
+        frmSignUp.Show()
+    End Sub
+
     Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
 
-        If txtPassword.Text <> txtRetypedPassword.Text Then
-
+        If txtPassword.Text <> txtRetypedPassword.Text And txtPassword.Text <> "" And txtRetypedPassword.Text <> "" Then
             txtPassword.Clear()
             txtRetypedPassword.Clear()
 
@@ -24,6 +30,7 @@
 
     Private Sub frmRegisterDetails_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        ' Declares that the value declared in the string EmployeeEmail will be displayed in txtEmployeeEmail.Text '
         txtEmployeeEmail.Text = EmployeeEmail
 
     End Sub

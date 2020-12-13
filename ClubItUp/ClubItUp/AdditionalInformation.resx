@@ -117,4 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="RichTextBox1.Text" xml:space="preserve">
+    <value>Please note that all information will be validated and is subject for review in the event that 5 or more security validations have been breached. 
+
+In the event that a breach has been recorded, you will be notified. It's important to note that if 5 or more breaches are made, all progress will be reset and the programme will stop.</value>
+  </data>
 </root>
