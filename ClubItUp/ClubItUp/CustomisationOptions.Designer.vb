@@ -28,31 +28,37 @@ Partial Class frmCustomisationOptions
         Me.txtTotalItemCost = New System.Windows.Forms.TextBox()
         Me.lblStripesTotalCost = New System.Windows.Forms.Label()
         Me.gbxHoodieCustomisation = New System.Windows.Forms.GroupBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtHoodieQuantity = New System.Windows.Forms.TextBox()
+        Me.txtHoodiePrice = New System.Windows.Forms.TextBox()
+        Me.lblHoodieQuantity = New System.Windows.Forms.Label()
+        Me.lblHoodiePrice = New System.Windows.Forms.Label()
+        Me.btnAddHoodieTotal = New System.Windows.Forms.Button()
+        Me.txtExtraStripesHoodie = New System.Windows.Forms.TextBox()
+        Me.lblExtraHoodieStripe = New System.Windows.Forms.Label()
+        Me.txtHoodieSubtotal = New System.Windows.Forms.TextBox()
+        Me.lblHoodieSubtotal = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.gbxShortsCustomisation = New System.Windows.Forms.GroupBox()
-        Me.btnAddTotals = New System.Windows.Forms.Button()
-        Me.cbxAddStripe = New System.Windows.Forms.CheckBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txtShortsQuantity = New System.Windows.Forms.TextBox()
+        Me.lblShortsQuantity = New System.Windows.Forms.Label()
+        Me.txtShortsPrice = New System.Windows.Forms.TextBox()
+        Me.btnAddShortsTotal = New System.Windows.Forms.Button()
+        Me.txtShortsSubStripes = New System.Windows.Forms.TextBox()
         Me.lblTotalShortsCost = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.lblShortsRequired = New System.Windows.Forms.Label()
+        Me.txtExtraStripes = New System.Windows.Forms.TextBox()
+        Me.lblExtraStripeShorts = New System.Windows.Forms.Label()
         Me.lblShortsPrice = New System.Windows.Forms.Label()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.gbxJerseyCustomisation = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtJerseyQuantity = New System.Windows.Forms.TextBox()
+        Me.txtJerseyPrice = New System.Windows.Forms.TextBox()
+        Me.lblJerseyQuantity = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.btnAddJerseyTotal = New System.Windows.Forms.Button()
+        Me.txtExtraStripesJersey = New System.Windows.Forms.TextBox()
+        Me.lblExtraJerseyStripe = New System.Windows.Forms.Label()
+        Me.txtJerseySubtotal = New System.Windows.Forms.TextBox()
+        Me.lblJerseySubtotal = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
@@ -127,13 +133,15 @@ Partial Class frmCustomisationOptions
         'gbxHoodieCustomisation
         '
         Me.gbxHoodieCustomisation.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.gbxHoodieCustomisation.Controls.Add(Me.Button2)
-        Me.gbxHoodieCustomisation.Controls.Add(Me.TextBox2)
-        Me.gbxHoodieCustomisation.Controls.Add(Me.CheckBox2)
-        Me.gbxHoodieCustomisation.Controls.Add(Me.Label5)
-        Me.gbxHoodieCustomisation.Controls.Add(Me.TextBox7)
-        Me.gbxHoodieCustomisation.Controls.Add(Me.Label2)
-        Me.gbxHoodieCustomisation.Controls.Add(Me.Label4)
+        Me.gbxHoodieCustomisation.Controls.Add(Me.txtHoodieQuantity)
+        Me.gbxHoodieCustomisation.Controls.Add(Me.txtHoodiePrice)
+        Me.gbxHoodieCustomisation.Controls.Add(Me.lblHoodieQuantity)
+        Me.gbxHoodieCustomisation.Controls.Add(Me.lblHoodiePrice)
+        Me.gbxHoodieCustomisation.Controls.Add(Me.btnAddHoodieTotal)
+        Me.gbxHoodieCustomisation.Controls.Add(Me.txtExtraStripesHoodie)
+        Me.gbxHoodieCustomisation.Controls.Add(Me.lblExtraHoodieStripe)
+        Me.gbxHoodieCustomisation.Controls.Add(Me.txtHoodieSubtotal)
+        Me.gbxHoodieCustomisation.Controls.Add(Me.lblHoodieSubtotal)
         Me.gbxHoodieCustomisation.Controls.Add(Me.PictureBox2)
         Me.gbxHoodieCustomisation.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gbxHoodieCustomisation.Location = New System.Drawing.Point(505, 12)
@@ -143,79 +151,100 @@ Partial Class frmCustomisationOptions
         Me.gbxHoodieCustomisation.TabStop = False
         Me.gbxHoodieCustomisation.Text = "Hoodie Customisation"
         '
-        'Button2
+        'txtHoodieQuantity
         '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(46, 256)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(93, 37)
-        Me.Button2.TabIndex = 44
-        Me.Button2.Text = "Add Totals"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.txtHoodieQuantity.Location = New System.Drawing.Point(149, 172)
+        Me.txtHoodieQuantity.MaxLength = 20
+        Me.txtHoodieQuantity.Name = "txtHoodieQuantity"
+        Me.txtHoodieQuantity.Size = New System.Drawing.Size(41, 24)
+        Me.txtHoodieQuantity.TabIndex = 50
+        Me.txtHoodieQuantity.Visible = False
         '
-        'TextBox2
+        'txtHoodiePrice
         '
-        Me.TextBox2.Location = New System.Drawing.Point(148, 174)
-        Me.TextBox2.MaxLength = 20
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(41, 24)
-        Me.TextBox2.TabIndex = 43
-        Me.TextBox2.Visible = False
+        Me.txtHoodiePrice.Location = New System.Drawing.Point(149, 139)
+        Me.txtHoodiePrice.MaxLength = 20
+        Me.txtHoodiePrice.Name = "txtHoodiePrice"
+        Me.txtHoodiePrice.ReadOnly = True
+        Me.txtHoodiePrice.Size = New System.Drawing.Size(41, 24)
+        Me.txtHoodiePrice.TabIndex = 46
+        Me.txtHoodiePrice.Visible = False
         '
-        'CheckBox2
+        'lblHoodieQuantity
         '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(174, 142)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox2.TabIndex = 43
-        Me.CheckBox2.UseVisualStyleBackColor = True
+        Me.lblHoodieQuantity.AutoSize = True
+        Me.lblHoodieQuantity.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHoodieQuantity.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.lblHoodieQuantity.Location = New System.Drawing.Point(7, 174)
+        Me.lblHoodieQuantity.Name = "lblHoodieQuantity"
+        Me.lblHoodieQuantity.Size = New System.Drawing.Size(76, 21)
+        Me.lblHoodieQuantity.TabIndex = 49
+        Me.lblHoodieQuantity.Text = "Quantity"
         '
-        'Label5
+        'lblHoodiePrice
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(6, 177)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(112, 21)
-        Me.Label5.TabIndex = 42
-        Me.Label5.Text = "Extra Stripes?"
-        Me.Label5.Visible = False
+        Me.lblHoodiePrice.AutoSize = True
+        Me.lblHoodiePrice.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHoodiePrice.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.lblHoodiePrice.Location = New System.Drawing.Point(7, 142)
+        Me.lblHoodiePrice.Name = "lblHoodiePrice"
+        Me.lblHoodiePrice.Size = New System.Drawing.Size(107, 21)
+        Me.lblHoodiePrice.TabIndex = 45
+        Me.lblHoodiePrice.Text = "Hoodie Price"
         '
-        'TextBox7
+        'btnAddHoodieTotal
         '
-        Me.TextBox7.Location = New System.Drawing.Point(148, 219)
-        Me.TextBox7.MaxLength = 20
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.ReadOnly = True
-        Me.TextBox7.Size = New System.Drawing.Size(41, 24)
-        Me.TextBox7.TabIndex = 43
+        Me.btnAddHoodieTotal.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.btnAddHoodieTotal.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnAddHoodieTotal.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAddHoodieTotal.ForeColor = System.Drawing.Color.White
+        Me.btnAddHoodieTotal.Location = New System.Drawing.Point(46, 256)
+        Me.btnAddHoodieTotal.Name = "btnAddHoodieTotal"
+        Me.btnAddHoodieTotal.Size = New System.Drawing.Size(93, 37)
+        Me.btnAddHoodieTotal.TabIndex = 44
+        Me.btnAddHoodieTotal.Text = "Add Totals"
+        Me.btnAddHoodieTotal.UseVisualStyleBackColor = False
         '
-        'Label2
+        'txtExtraStripesHoodie
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(6, 142)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(98, 21)
-        Me.Label2.TabIndex = 42
-        Me.Label2.Text = "Add Stripe?"
+        Me.txtExtraStripesHoodie.Location = New System.Drawing.Point(149, 200)
+        Me.txtExtraStripesHoodie.MaxLength = 20
+        Me.txtExtraStripesHoodie.Name = "txtExtraStripesHoodie"
+        Me.txtExtraStripesHoodie.Size = New System.Drawing.Size(41, 24)
+        Me.txtExtraStripesHoodie.TabIndex = 43
+        Me.txtExtraStripesHoodie.Visible = False
         '
-        'Label4
+        'lblExtraHoodieStripe
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(6, 219)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(88, 22)
-        Me.Label4.TabIndex = 42
-        Me.Label4.Text = "Sub Total"
+        Me.lblExtraHoodieStripe.AutoSize = True
+        Me.lblExtraHoodieStripe.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblExtraHoodieStripe.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.lblExtraHoodieStripe.Location = New System.Drawing.Point(7, 203)
+        Me.lblExtraHoodieStripe.Name = "lblExtraHoodieStripe"
+        Me.lblExtraHoodieStripe.Size = New System.Drawing.Size(112, 21)
+        Me.lblExtraHoodieStripe.TabIndex = 42
+        Me.lblExtraHoodieStripe.Text = "Extra Stripes?"
+        Me.lblExtraHoodieStripe.Visible = False
+        '
+        'txtHoodieSubtotal
+        '
+        Me.txtHoodieSubtotal.Location = New System.Drawing.Point(149, 230)
+        Me.txtHoodieSubtotal.MaxLength = 20
+        Me.txtHoodieSubtotal.Name = "txtHoodieSubtotal"
+        Me.txtHoodieSubtotal.ReadOnly = True
+        Me.txtHoodieSubtotal.Size = New System.Drawing.Size(41, 24)
+        Me.txtHoodieSubtotal.TabIndex = 43
+        '
+        'lblHoodieSubtotal
+        '
+        Me.lblHoodieSubtotal.AutoSize = True
+        Me.lblHoodieSubtotal.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHoodieSubtotal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.lblHoodieSubtotal.Location = New System.Drawing.Point(7, 230)
+        Me.lblHoodieSubtotal.Name = "lblHoodieSubtotal"
+        Me.lblHoodieSubtotal.Size = New System.Drawing.Size(88, 22)
+        Me.lblHoodieSubtotal.TabIndex = 42
+        Me.lblHoodieSubtotal.Text = "Sub Total"
         '
         'PictureBox2
         '
@@ -228,12 +257,14 @@ Partial Class frmCustomisationOptions
         'gbxShortsCustomisation
         '
         Me.gbxShortsCustomisation.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.gbxShortsCustomisation.Controls.Add(Me.btnAddTotals)
-        Me.gbxShortsCustomisation.Controls.Add(Me.cbxAddStripe)
-        Me.gbxShortsCustomisation.Controls.Add(Me.TextBox4)
+        Me.gbxShortsCustomisation.Controls.Add(Me.txtShortsQuantity)
+        Me.gbxShortsCustomisation.Controls.Add(Me.lblShortsQuantity)
+        Me.gbxShortsCustomisation.Controls.Add(Me.txtShortsPrice)
+        Me.gbxShortsCustomisation.Controls.Add(Me.btnAddShortsTotal)
+        Me.gbxShortsCustomisation.Controls.Add(Me.txtShortsSubStripes)
         Me.gbxShortsCustomisation.Controls.Add(Me.lblTotalShortsCost)
-        Me.gbxShortsCustomisation.Controls.Add(Me.TextBox3)
-        Me.gbxShortsCustomisation.Controls.Add(Me.lblShortsRequired)
+        Me.gbxShortsCustomisation.Controls.Add(Me.txtExtraStripes)
+        Me.gbxShortsCustomisation.Controls.Add(Me.lblExtraStripeShorts)
         Me.gbxShortsCustomisation.Controls.Add(Me.lblShortsPrice)
         Me.gbxShortsCustomisation.Controls.Add(Me.PictureBox3)
         Me.gbxShortsCustomisation.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -244,79 +275,100 @@ Partial Class frmCustomisationOptions
         Me.gbxShortsCustomisation.TabStop = False
         Me.gbxShortsCustomisation.Text = "Shorts Customisation"
         '
-        'btnAddTotals
+        'txtShortsQuantity
         '
-        Me.btnAddTotals.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.btnAddTotals.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnAddTotals.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAddTotals.ForeColor = System.Drawing.Color.White
-        Me.btnAddTotals.Location = New System.Drawing.Point(39, 262)
-        Me.btnAddTotals.Name = "btnAddTotals"
-        Me.btnAddTotals.Size = New System.Drawing.Size(93, 37)
-        Me.btnAddTotals.TabIndex = 43
-        Me.btnAddTotals.Text = "Add Totals"
-        Me.btnAddTotals.UseVisualStyleBackColor = False
+        Me.txtShortsQuantity.Location = New System.Drawing.Point(142, 172)
+        Me.txtShortsQuantity.MaxLength = 20
+        Me.txtShortsQuantity.Name = "txtShortsQuantity"
+        Me.txtShortsQuantity.Size = New System.Drawing.Size(41, 24)
+        Me.txtShortsQuantity.TabIndex = 46
+        Me.txtShortsQuantity.Visible = False
         '
-        'cbxAddStripe
+        'lblShortsQuantity
         '
-        Me.cbxAddStripe.AutoSize = True
-        Me.cbxAddStripe.Location = New System.Drawing.Point(169, 147)
-        Me.cbxAddStripe.Name = "cbxAddStripe"
-        Me.cbxAddStripe.Size = New System.Drawing.Size(15, 14)
-        Me.cbxAddStripe.TabIndex = 36
-        Me.cbxAddStripe.UseVisualStyleBackColor = True
+        Me.lblShortsQuantity.AutoSize = True
+        Me.lblShortsQuantity.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblShortsQuantity.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.lblShortsQuantity.Location = New System.Drawing.Point(20, 172)
+        Me.lblShortsQuantity.Name = "lblShortsQuantity"
+        Me.lblShortsQuantity.Size = New System.Drawing.Size(76, 21)
+        Me.lblShortsQuantity.TabIndex = 45
+        Me.lblShortsQuantity.Text = "Quantity"
         '
-        'TextBox4
+        'txtShortsPrice
         '
-        Me.TextBox4.Location = New System.Drawing.Point(143, 219)
-        Me.TextBox4.MaxLength = 20
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.ReadOnly = True
-        Me.TextBox4.Size = New System.Drawing.Size(41, 24)
-        Me.TextBox4.TabIndex = 35
+        Me.txtShortsPrice.Location = New System.Drawing.Point(142, 142)
+        Me.txtShortsPrice.MaxLength = 20
+        Me.txtShortsPrice.Name = "txtShortsPrice"
+        Me.txtShortsPrice.ReadOnly = True
+        Me.txtShortsPrice.Size = New System.Drawing.Size(41, 24)
+        Me.txtShortsPrice.TabIndex = 44
+        Me.txtShortsPrice.Visible = False
+        '
+        'btnAddShortsTotal
+        '
+        Me.btnAddShortsTotal.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.btnAddShortsTotal.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnAddShortsTotal.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAddShortsTotal.ForeColor = System.Drawing.Color.White
+        Me.btnAddShortsTotal.Location = New System.Drawing.Point(39, 262)
+        Me.btnAddShortsTotal.Name = "btnAddShortsTotal"
+        Me.btnAddShortsTotal.Size = New System.Drawing.Size(93, 37)
+        Me.btnAddShortsTotal.TabIndex = 43
+        Me.btnAddShortsTotal.Text = "Add Totals"
+        Me.btnAddShortsTotal.UseVisualStyleBackColor = False
+        '
+        'txtShortsSubStripes
+        '
+        Me.txtShortsSubStripes.Location = New System.Drawing.Point(142, 232)
+        Me.txtShortsSubStripes.MaxLength = 20
+        Me.txtShortsSubStripes.Name = "txtShortsSubStripes"
+        Me.txtShortsSubStripes.ReadOnly = True
+        Me.txtShortsSubStripes.Size = New System.Drawing.Size(41, 24)
+        Me.txtShortsSubStripes.TabIndex = 35
         '
         'lblTotalShortsCost
         '
         Me.lblTotalShortsCost.AutoSize = True
         Me.lblTotalShortsCost.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTotalShortsCost.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.lblTotalShortsCost.Location = New System.Drawing.Point(20, 220)
+        Me.lblTotalShortsCost.Location = New System.Drawing.Point(19, 233)
         Me.lblTotalShortsCost.Name = "lblTotalShortsCost"
         Me.lblTotalShortsCost.Size = New System.Drawing.Size(88, 22)
         Me.lblTotalShortsCost.TabIndex = 34
         Me.lblTotalShortsCost.Text = "Sub Total"
         '
-        'TextBox3
+        'txtExtraStripes
         '
-        Me.TextBox3.Location = New System.Drawing.Point(143, 178)
-        Me.TextBox3.MaxLength = 20
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(41, 24)
-        Me.TextBox3.TabIndex = 33
-        Me.TextBox3.Visible = False
+        Me.txtExtraStripes.Location = New System.Drawing.Point(143, 202)
+        Me.txtExtraStripes.MaxLength = 20
+        Me.txtExtraStripes.Name = "txtExtraStripes"
+        Me.txtExtraStripes.Size = New System.Drawing.Size(41, 24)
+        Me.txtExtraStripes.TabIndex = 33
+        Me.txtExtraStripes.Visible = False
         '
-        'lblShortsRequired
+        'lblExtraStripeShorts
         '
-        Me.lblShortsRequired.AutoSize = True
-        Me.lblShortsRequired.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblShortsRequired.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.lblShortsRequired.Location = New System.Drawing.Point(20, 178)
-        Me.lblShortsRequired.Name = "lblShortsRequired"
-        Me.lblShortsRequired.Size = New System.Drawing.Size(112, 21)
-        Me.lblShortsRequired.TabIndex = 32
-        Me.lblShortsRequired.Text = "Extra Stripes?"
-        Me.lblShortsRequired.Visible = False
+        Me.lblExtraStripeShorts.AutoSize = True
+        Me.lblExtraStripeShorts.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblExtraStripeShorts.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.lblExtraStripeShorts.Location = New System.Drawing.Point(20, 202)
+        Me.lblExtraStripeShorts.Name = "lblExtraStripeShorts"
+        Me.lblExtraStripeShorts.Size = New System.Drawing.Size(112, 21)
+        Me.lblExtraStripeShorts.TabIndex = 32
+        Me.lblExtraStripeShorts.Text = "Extra Stripes?"
+        Me.lblExtraStripeShorts.Visible = False
         '
         'lblShortsPrice
         '
         Me.lblShortsPrice.AutoSize = True
         Me.lblShortsPrice.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblShortsPrice.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.lblShortsPrice.Location = New System.Drawing.Point(20, 140)
+        Me.lblShortsPrice.Location = New System.Drawing.Point(20, 142)
         Me.lblShortsPrice.Name = "lblShortsPrice"
-        Me.lblShortsPrice.Size = New System.Drawing.Size(98, 21)
+        Me.lblShortsPrice.Size = New System.Drawing.Size(100, 21)
         Me.lblShortsPrice.TabIndex = 30
-        Me.lblShortsPrice.Text = "Add Stripe?"
+        Me.lblShortsPrice.Text = "Shorts Price"
         '
         'PictureBox3
         '
@@ -329,13 +381,15 @@ Partial Class frmCustomisationOptions
         'gbxJerseyCustomisation
         '
         Me.gbxJerseyCustomisation.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.gbxJerseyCustomisation.Controls.Add(Me.Button1)
-        Me.gbxJerseyCustomisation.Controls.Add(Me.TextBox1)
-        Me.gbxJerseyCustomisation.Controls.Add(Me.CheckBox1)
-        Me.gbxJerseyCustomisation.Controls.Add(Me.Label3)
-        Me.gbxJerseyCustomisation.Controls.Add(Me.Label6)
-        Me.gbxJerseyCustomisation.Controls.Add(Me.TextBox5)
-        Me.gbxJerseyCustomisation.Controls.Add(Me.Label1)
+        Me.gbxJerseyCustomisation.Controls.Add(Me.txtJerseyQuantity)
+        Me.gbxJerseyCustomisation.Controls.Add(Me.txtJerseyPrice)
+        Me.gbxJerseyCustomisation.Controls.Add(Me.lblJerseyQuantity)
+        Me.gbxJerseyCustomisation.Controls.Add(Me.Label2)
+        Me.gbxJerseyCustomisation.Controls.Add(Me.btnAddJerseyTotal)
+        Me.gbxJerseyCustomisation.Controls.Add(Me.txtExtraStripesJersey)
+        Me.gbxJerseyCustomisation.Controls.Add(Me.lblExtraJerseyStripe)
+        Me.gbxJerseyCustomisation.Controls.Add(Me.txtJerseySubtotal)
+        Me.gbxJerseyCustomisation.Controls.Add(Me.lblJerseySubtotal)
         Me.gbxJerseyCustomisation.Controls.Add(Me.PictureBox1)
         Me.gbxJerseyCustomisation.Controls.Add(Me.GroupBox3)
         Me.gbxJerseyCustomisation.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -346,79 +400,100 @@ Partial Class frmCustomisationOptions
         Me.gbxJerseyCustomisation.TabStop = False
         Me.gbxJerseyCustomisation.Text = "Jersey Customisation"
         '
-        'Button1
+        'txtJerseyQuantity
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(44, 256)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(93, 37)
-        Me.Button1.TabIndex = 44
-        Me.Button1.Text = "Add Totals"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.txtJerseyQuantity.Location = New System.Drawing.Point(141, 173)
+        Me.txtJerseyQuantity.MaxLength = 20
+        Me.txtJerseyQuantity.Name = "txtJerseyQuantity"
+        Me.txtJerseyQuantity.Size = New System.Drawing.Size(41, 24)
+        Me.txtJerseyQuantity.TabIndex = 48
+        Me.txtJerseyQuantity.Visible = False
         '
-        'TextBox1
+        'txtJerseyPrice
         '
-        Me.TextBox1.Location = New System.Drawing.Point(143, 174)
-        Me.TextBox1.MaxLength = 20
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(41, 24)
-        Me.TextBox1.TabIndex = 38
-        Me.TextBox1.Visible = False
+        Me.txtJerseyPrice.Location = New System.Drawing.Point(141, 143)
+        Me.txtJerseyPrice.MaxLength = 20
+        Me.txtJerseyPrice.Name = "txtJerseyPrice"
+        Me.txtJerseyPrice.ReadOnly = True
+        Me.txtJerseyPrice.Size = New System.Drawing.Size(41, 24)
+        Me.txtJerseyPrice.TabIndex = 46
+        Me.txtJerseyPrice.Visible = False
         '
-        'CheckBox1
+        'lblJerseyQuantity
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(167, 147)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox1.TabIndex = 41
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.lblJerseyQuantity.AutoSize = True
+        Me.lblJerseyQuantity.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblJerseyQuantity.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.lblJerseyQuantity.Location = New System.Drawing.Point(6, 173)
+        Me.lblJerseyQuantity.Name = "lblJerseyQuantity"
+        Me.lblJerseyQuantity.Size = New System.Drawing.Size(76, 21)
+        Me.lblJerseyQuantity.TabIndex = 47
+        Me.lblJerseyQuantity.Text = "Quantity"
         '
-        'Label3
+        'Label2
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(6, 178)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(112, 21)
-        Me.Label3.TabIndex = 37
-        Me.Label3.Text = "Extra Stripes?"
-        Me.Label3.Visible = False
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(6, 143)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(97, 21)
+        Me.Label2.TabIndex = 45
+        Me.Label2.Text = "Jersey Price"
         '
-        'Label6
+        'btnAddJerseyTotal
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(6, 142)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(98, 21)
-        Me.Label6.TabIndex = 40
-        Me.Label6.Text = "Add Stripe?"
+        Me.btnAddJerseyTotal.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.btnAddJerseyTotal.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnAddJerseyTotal.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAddJerseyTotal.ForeColor = System.Drawing.Color.White
+        Me.btnAddJerseyTotal.Location = New System.Drawing.Point(44, 256)
+        Me.btnAddJerseyTotal.Name = "btnAddJerseyTotal"
+        Me.btnAddJerseyTotal.Size = New System.Drawing.Size(93, 37)
+        Me.btnAddJerseyTotal.TabIndex = 44
+        Me.btnAddJerseyTotal.Text = "Add Totals"
+        Me.btnAddJerseyTotal.UseVisualStyleBackColor = False
         '
-        'TextBox5
+        'txtExtraStripesJersey
         '
-        Me.TextBox5.Location = New System.Drawing.Point(143, 218)
-        Me.TextBox5.MaxLength = 20
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.ReadOnly = True
-        Me.TextBox5.Size = New System.Drawing.Size(41, 24)
-        Me.TextBox5.TabIndex = 39
+        Me.txtExtraStripesJersey.Location = New System.Drawing.Point(142, 201)
+        Me.txtExtraStripesJersey.MaxLength = 20
+        Me.txtExtraStripesJersey.Name = "txtExtraStripesJersey"
+        Me.txtExtraStripesJersey.Size = New System.Drawing.Size(41, 24)
+        Me.txtExtraStripesJersey.TabIndex = 38
+        Me.txtExtraStripesJersey.Visible = False
         '
-        'Label1
+        'lblExtraJerseyStripe
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(6, 219)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(88, 22)
-        Me.Label1.TabIndex = 38
-        Me.Label1.Text = "Sub Total"
+        Me.lblExtraJerseyStripe.AutoSize = True
+        Me.lblExtraJerseyStripe.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblExtraJerseyStripe.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.lblExtraJerseyStripe.Location = New System.Drawing.Point(5, 204)
+        Me.lblExtraJerseyStripe.Name = "lblExtraJerseyStripe"
+        Me.lblExtraJerseyStripe.Size = New System.Drawing.Size(112, 21)
+        Me.lblExtraJerseyStripe.TabIndex = 37
+        Me.lblExtraJerseyStripe.Text = "Extra Stripes?"
+        Me.lblExtraJerseyStripe.Visible = False
+        '
+        'txtJerseySubtotal
+        '
+        Me.txtJerseySubtotal.Location = New System.Drawing.Point(141, 231)
+        Me.txtJerseySubtotal.MaxLength = 20
+        Me.txtJerseySubtotal.Name = "txtJerseySubtotal"
+        Me.txtJerseySubtotal.ReadOnly = True
+        Me.txtJerseySubtotal.Size = New System.Drawing.Size(41, 24)
+        Me.txtJerseySubtotal.TabIndex = 39
+        '
+        'lblJerseySubtotal
+        '
+        Me.lblJerseySubtotal.AutoSize = True
+        Me.lblJerseySubtotal.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblJerseySubtotal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.lblJerseySubtotal.Location = New System.Drawing.Point(4, 232)
+        Me.lblJerseySubtotal.Name = "lblJerseySubtotal"
+        Me.lblJerseySubtotal.Size = New System.Drawing.Size(88, 22)
+        Me.lblJerseySubtotal.TabIndex = 38
+        Me.lblJerseySubtotal.Text = "Sub Total"
         '
         'PictureBox1
         '
@@ -495,33 +570,39 @@ Partial Class frmCustomisationOptions
     Friend WithEvents txtTotalItemCost As TextBox
     Friend WithEvents lblStripesTotalCost As Label
     Friend WithEvents gbxHoodieCustomisation As GroupBox
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents Label4 As Label
+    Friend WithEvents lblHoodieSubtotal As Label
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents gbxShortsCustomisation As GroupBox
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents txtShortsSubStripes As TextBox
     Friend WithEvents lblTotalShortsCost As Label
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents lblShortsRequired As Label
+    Friend WithEvents txtExtraStripes As TextBox
+    Friend WithEvents lblExtraStripeShorts As Label
     Friend WithEvents lblShortsPrice As Label
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents gbxJerseyCustomisation As GroupBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents txtJerseySubtotal As TextBox
+    Friend WithEvents lblJerseySubtotal As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents GroupBox3 As GroupBox
-    Friend WithEvents cbxAddStripe As CheckBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label6 As Label
+    Friend WithEvents txtExtraStripesHoodie As TextBox
+    Friend WithEvents lblExtraHoodieStripe As Label
+    Friend WithEvents txtExtraStripesJersey As TextBox
+    Friend WithEvents lblExtraJerseyStripe As Label
     Friend WithEvents TextBox6 As TextBox
     Friend WithEvents lblTotalItemsCost As Label
-    Friend WithEvents btnAddTotals As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnAddShortsTotal As Button
+    Friend WithEvents btnAddHoodieTotal As Button
+    Friend WithEvents btnAddJerseyTotal As Button
+    Friend WithEvents txtHoodiePrice As TextBox
+    Friend WithEvents lblHoodiePrice As Label
+    Friend WithEvents txtShortsPrice As TextBox
+    Friend WithEvents txtJerseyPrice As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents txtShortsQuantity As TextBox
+    Friend WithEvents lblShortsQuantity As Label
+    Friend WithEvents txtHoodieQuantity As TextBox
+    Friend WithEvents lblHoodieQuantity As Label
+    Friend WithEvents txtJerseyQuantity As TextBox
+    Friend WithEvents lblJerseyQuantity As Label
+    Friend WithEvents txtHoodieSubtotal As TextBox
 End Class

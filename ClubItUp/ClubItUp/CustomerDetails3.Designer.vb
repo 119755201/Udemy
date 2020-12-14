@@ -23,6 +23,8 @@ Partial Class frmCustomerDetails3
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.gbxPaymentInformation = New System.Windows.Forms.GroupBox()
+        Me.txtCardHolderName = New System.Windows.Forms.TextBox()
+        Me.lblCardHolderName = New System.Windows.Forms.Label()
         Me.lbxPaymentType = New System.Windows.Forms.ListBox()
         Me.txtCardNumber = New System.Windows.Forms.TextBox()
         Me.lblPaymentInformation = New System.Windows.Forms.Label()
@@ -31,8 +33,6 @@ Partial Class frmCustomerDetails3
         Me.btnNext = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
-        Me.txtCardHolderName = New System.Windows.Forms.TextBox()
-        Me.lblCardHolderName = New System.Windows.Forms.Label()
         Me.gbxPaymentInformation.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -55,6 +55,25 @@ Partial Class frmCustomerDetails3
         Me.gbxPaymentInformation.Size = New System.Drawing.Size(626, 310)
         Me.gbxPaymentInformation.TabIndex = 12
         Me.gbxPaymentInformation.TabStop = False
+        '
+        'txtCardHolderName
+        '
+        Me.txtCardHolderName.Location = New System.Drawing.Point(285, 85)
+        Me.txtCardHolderName.MaxLength = 30
+        Me.txtCardHolderName.Name = "txtCardHolderName"
+        Me.txtCardHolderName.Size = New System.Drawing.Size(197, 24)
+        Me.txtCardHolderName.TabIndex = 24
+        '
+        'lblCardHolderName
+        '
+        Me.lblCardHolderName.AutoSize = True
+        Me.lblCardHolderName.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCardHolderName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.lblCardHolderName.Location = New System.Drawing.Point(109, 85)
+        Me.lblCardHolderName.Name = "lblCardHolderName"
+        Me.lblCardHolderName.Size = New System.Drawing.Size(153, 21)
+        Me.lblCardHolderName.TabIndex = 23
+        Me.lblCardHolderName.Text = "Card Holder Name"
         '
         'lbxPaymentType
         '
@@ -146,25 +165,6 @@ Partial Class frmCustomerDetails3
         Me.btnExit.TabIndex = 13
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = False
-        '
-        'txtCardHolderName
-        '
-        Me.txtCardHolderName.Location = New System.Drawing.Point(285, 85)
-        Me.txtCardHolderName.MaxLength = 30
-        Me.txtCardHolderName.Name = "txtCardHolderName"
-        Me.txtCardHolderName.Size = New System.Drawing.Size(197, 24)
-        Me.txtCardHolderName.TabIndex = 24
-        '
-        'lblCardHolderName
-        '
-        Me.lblCardHolderName.AutoSize = True
-        Me.lblCardHolderName.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCardHolderName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.lblCardHolderName.Location = New System.Drawing.Point(109, 85)
-        Me.lblCardHolderName.Name = "lblCardHolderName"
-        Me.lblCardHolderName.Size = New System.Drawing.Size(153, 21)
-        Me.lblCardHolderName.TabIndex = 23
-        Me.lblCardHolderName.Text = "Card Holder Name"
         '
         'frmCustomerDetails3
         '
