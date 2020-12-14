@@ -7,6 +7,13 @@
         ' hides the current form from view and shows the previous form: frmSignUp '
         Me.Hide()
         frmSignUp.Show()
+
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+
+        Me.Close()
+
     End Sub
 
     Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click

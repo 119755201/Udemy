@@ -56,9 +56,9 @@ Partial Class frmAdditionalInformation
         'RichTextBox1
         '
         Me.RichTextBox1.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RichTextBox1.Location = New System.Drawing.Point(25, 59)
+        Me.RichTextBox1.Location = New System.Drawing.Point(25, 72)
         Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(586, 140)
+        Me.RichTextBox1.Size = New System.Drawing.Size(586, 116)
         Me.RichTextBox1.TabIndex = 18
         Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
         '

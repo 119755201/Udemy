@@ -58,7 +58,23 @@
 
     Private Sub btnUpdateDetails_Click(sender As Object, e As EventArgs) Handles btnUpdateDetails.Click
 
+        frmRegisterDetails.Show()
+        EmployeeEmail = ""
+        FullName = ""
+        lstUserInfoOutput.ClearSelected()
 
+    End Sub
+
+    Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
+
+        frmCustomerDetails.Show()
+
+    End Sub
+
+    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+
+        Me.Hide()
+        frmRegisterDetails.Show()
 
     End Sub
 End Class

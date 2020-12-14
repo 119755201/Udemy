@@ -73,12 +73,12 @@ Partial Class frmEmployeeConfirmation
         '
         'lstUserInfoOutput
         '
-        Me.lstUserInfoOutput.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstUserInfoOutput.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lstUserInfoOutput.FormattingEnabled = True
-        Me.lstUserInfoOutput.ItemHeight = 19
+        Me.lstUserInfoOutput.ItemHeight = 16
         Me.lstUserInfoOutput.Location = New System.Drawing.Point(58, 87)
         Me.lstUserInfoOutput.Name = "lstUserInfoOutput"
-        Me.lstUserInfoOutput.Size = New System.Drawing.Size(235, 118)
+        Me.lstUserInfoOutput.Size = New System.Drawing.Size(235, 116)
         Me.lstUserInfoOutput.TabIndex = 18
         '
         'btnUpdateDetails

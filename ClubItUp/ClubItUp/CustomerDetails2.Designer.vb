@@ -23,13 +23,13 @@ Partial Class frmCustomerDetails2
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.gbxCustomerInformation = New System.Windows.Forms.GroupBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtEirCode = New System.Windows.Forms.TextBox()
         Me.lblEirCode = New System.Windows.Forms.Label()
         Me.txtTownCity = New System.Windows.Forms.TextBox()
         Me.lblAddressInformation = New System.Windows.Forms.Label()
         Me.txtStreetAddress = New System.Windows.Forms.TextBox()
         Me.txtCounty = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblCounty = New System.Windows.Forms.Label()
         Me.lblTownCity = New System.Windows.Forms.Label()
         Me.lblStreetAddress = New System.Windows.Forms.Label()
         Me.btnNext = New System.Windows.Forms.Button()
@@ -41,13 +41,13 @@ Partial Class frmCustomerDetails2
         'gbxCustomerInformation
         '
         Me.gbxCustomerInformation.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.gbxCustomerInformation.Controls.Add(Me.TextBox1)
+        Me.gbxCustomerInformation.Controls.Add(Me.txtEirCode)
         Me.gbxCustomerInformation.Controls.Add(Me.lblEirCode)
         Me.gbxCustomerInformation.Controls.Add(Me.txtTownCity)
         Me.gbxCustomerInformation.Controls.Add(Me.lblAddressInformation)
         Me.gbxCustomerInformation.Controls.Add(Me.txtStreetAddress)
         Me.gbxCustomerInformation.Controls.Add(Me.txtCounty)
-        Me.gbxCustomerInformation.Controls.Add(Me.Label2)
+        Me.gbxCustomerInformation.Controls.Add(Me.lblCounty)
         Me.gbxCustomerInformation.Controls.Add(Me.lblTownCity)
         Me.gbxCustomerInformation.Controls.Add(Me.lblStreetAddress)
         Me.gbxCustomerInformation.Controls.Add(Me.btnNext)
@@ -60,14 +60,14 @@ Partial Class frmCustomerDetails2
         Me.gbxCustomerInformation.TabIndex = 11
         Me.gbxCustomerInformation.TabStop = False
         '
-        'TextBox1
+        'txtEirCode
         '
-        Me.TextBox1.Location = New System.Drawing.Point(283, 208)
-        Me.TextBox1.MaxLength = 7
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(197, 20)
-        Me.TextBox1.TabIndex = 23
+        Me.txtEirCode.Location = New System.Drawing.Point(283, 208)
+        Me.txtEirCode.MaxLength = 7
+        Me.txtEirCode.Multiline = True
+        Me.txtEirCode.Name = "txtEirCode"
+        Me.txtEirCode.Size = New System.Drawing.Size(197, 20)
+        Me.txtEirCode.TabIndex = 23
         '
         'lblEirCode
         '
@@ -116,16 +116,16 @@ Partial Class frmCustomerDetails2
         Me.txtCounty.Size = New System.Drawing.Size(197, 20)
         Me.txtCounty.TabIndex = 17
         '
-        'Label2
+        'lblCounty
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(142, 169)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(65, 21)
-        Me.Label2.TabIndex = 14
-        Me.Label2.Text = "County"
+        Me.lblCounty.AutoSize = True
+        Me.lblCounty.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCounty.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(194, Byte), Integer))
+        Me.lblCounty.Location = New System.Drawing.Point(142, 169)
+        Me.lblCounty.Name = "lblCounty"
+        Me.lblCounty.Size = New System.Drawing.Size(65, 21)
+        Me.lblCounty.TabIndex = 14
+        Me.lblCounty.Text = "County"
         '
         'lblTownCity
         '
@@ -209,13 +209,13 @@ Partial Class frmCustomerDetails2
     Friend WithEvents lblAddressInformation As Label
     Friend WithEvents txtStreetAddress As TextBox
     Friend WithEvents txtCounty As TextBox
-    Friend WithEvents Label2 As Label
+    Friend WithEvents lblCounty As Label
     Friend WithEvents lblTownCity As Label
     Friend WithEvents lblStreetAddress As Label
     Friend WithEvents btnNext As Button
     Friend WithEvents btnBack As Button
     Friend WithEvents btnExit As Button
     Friend WithEvents txtTownCity As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtEirCode As TextBox
     Friend WithEvents lblEirCode As Label
 End Class
